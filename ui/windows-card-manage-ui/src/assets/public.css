@@ -1,0 +1,36 @@
+.nav-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.nav-bottom-content {
+    position: relative;
+    top: 50px;
+}
+
+.folder-color {
+    color: #4b9af3;
+}
+
+/* 桌面图标 */
+.windows-icon {
+    width: 70px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.windows-icon:hover {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.windows-icon-dialog {
+    width: 70px;
+    padding: 8px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.24);
+}
