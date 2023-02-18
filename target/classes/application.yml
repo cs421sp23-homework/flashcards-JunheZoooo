@@ -1,0 +1,12 @@
+# spring 配置
+spring:
+  profiles:
+    active: druid
+server:
+  port: 8000
+  servlet:
+    context-path: /
+# mybatis-plus 配置
+mybatis-plus:
+  type-aliases-package: com.example.windowscardmanage.entity
+  mapper-locations: classpaty*:mapper/*Mapper.xml
