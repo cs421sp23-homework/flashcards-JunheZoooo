@@ -7,13 +7,13 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
 /**
- * 配置全局跨域
+ * 配置全局跨域(Configure global cross-domain)
  */
 @Configuration
 public class CorsConfig{
     private CorsConfiguration buildConfig() {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
-        corsConfiguration.addAllowedOrigin("*"); // 允许任何域名使用
+        corsConfiguration.addAllowedOrigin("*"); // Allow any domain name to use(允许任何域名使用)
         corsConfiguration.addAllowedHeader("*"); // 允许任何头
         corsConfiguration.addAllowedMethod("*"); // 允许任何方法 （post、 get 等）
         return corsConfiguration;

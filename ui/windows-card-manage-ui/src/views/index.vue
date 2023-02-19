@@ -1,8 +1,8 @@
 <template>
-  <!-- 桌面首页 -->
-  <!-- 最外层 -->
+  <!-- 桌面首页 -- desktop home -->
+  <!-- 最外层 -- box -->
   <div style="text-align: center;" :style="{backgroundImage: 'url('+ bgImageUrl +')'}" class="v-h-100 v-flex v-flex-flow">
-    <!-- 头部标签 -->
+    <!-- 头部标签 -- head tag -->
     <div class="nav-header v-flex" style="height: 7vh">
       <div class="v-flex-1 v-flex v-flex-aic p-l-40">
         <div class="cursor-p">
@@ -32,44 +32,56 @@
     <div class="nav-bottom-content p-l-20 p-r-20" style="height: 93vh">
       <div class="h-100">
         <div v-for="(item,i) in list" :key="i">
-          <!-- 文件夹 -->
-          <div v-if="item.cardType === 1" class="float-left m-r-10 cursor-d windows-icon" @contextmenu.prevent="clickRight(item,$event)">
-            <!-- 文件夹图标 -->
+          <!-- 文件夹 -- card decks -->
+          <div v-if="item.cardType === 1" class="float-left m-r-10 cursor-d windows-icon" :class="{
+                'folder-color': item.colorStyle===0,
+                'text-red': item.colorStyle===1,
+                'text-orange': item.colorStyle===2,
+                'super-member-color': item.colorStyle===3,
+                'text-green': item.colorStyle===4,
+                'text-blue': item.colorStyle===5}" @contextmenu.prevent="clickRight(item,$event)">
+            <!-- 文件夹图标 -- file icon -->
             <div>
-              <i class="iconfont icon-kapian1 folder-color font-size-40-plus"></i>
+              <i class="iconfont icon-kapian1 font-size-40-plus"></i>
             </div>
-            <!-- 文件夹名称 -->
+            <!-- 文件夹名称 -- file name -->
             <div class="font-size-12">
-              <span class="color-white">{{item.name}}</span>
+              <span>{{item.name}}</span>
             </div>
           </div>
-          <!-- 普通文件 -->
-          <div v-if="item.cardType === 2" class="float-left m-l-10 cursor-d windows-icon" @contextmenu="fileClickRight(item,$event)">
-            <!-- 文件夹图标 -->
+          <!-- 普通文件 -- general card -->
+          <div v-if="item.cardType === 2" class="float-left m-l-10 cursor-d windows-icon" :class="{
+                'text-white': item.colorStyle===0,
+                'text-red': item.colorStyle===1,
+                'text-orange': item.colorStyle===2,
+                'super-member-color': item.colorStyle===3,
+                'text-green': item.colorStyle===4,
+                'text-blue': item.colorStyle===5}" @contextmenu="fileClickRight(item,$event)">
+            <!-- card icon -->
             <div>
-              <i class="iconfont icon-kapian color-white font-size-40-plus"></i>
+              <i class="iconfont icon-kapian font-size-40-plus"></i>
             </div>
-            <!-- 文件夹名称 -->
+            <!-- card name -->
             <div class="font-size-12">
-              <span class="color-white">{{item.name}}</span>
+              <span>{{item.name}}</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- 文件夹上右键的弹框内容 -->
+    <!-- 文件夹上右键的弹框内容-- card decks right click pop-up box content -->
     <vue3-menus :open="isOpen" :event="eventVal" :menus="menus.menus">
       <template #label="{ menu }">{{ menu.label }}</template>
     </vue3-menus>
-    <!-- 文件上右键的弹框内容 -->
+    <!-- 文件上右键的弹框内容 -- card right click pop-up box content -->
     <vue3-menus :open="isFileOpen" :event="fileEventVal" :menus="fileMenus.menus">
       <template #label="{ menu }">{{ menu.label }}</template>
     </vue3-menus>
-    <!-- 在 card pakage dialog 中文件上右键的弹框内容 -->
+    <!-- 在 card pakage dialog 中文件上右键的弹框内容 -- it is card in desks dialog right click pop-up box content -->
     <vue3-menus :open="isDialogFileOpen" :event="dialogFileEventVal" :menus="dialogFileMenus.menus" :z-index="9999">
       <template #label="{ menu }">{{ menu.label }}</template>
     </vue3-menus>
-    <!-- 创建卡包弹框 -->
+    <!-- 创建卡包弹框 -- create desks dialog -->
     <el-dialog v-model="openCreateFolder" width="30%" title="create card DESKS" :before-close="closeCreateFolder">
       <el-form>
         <el-form-item label="DESKS name：">
@@ -83,25 +95,31 @@
         </span>
       </template>
     </el-dialog>
-    <!-- 打开卡包弹框 -->
+    <!-- 打开卡包弹框 -- open card dialog -->
     <el-dialog v-model="openFolder" width="60%" title="open card package">
       <div style="min-height: 100px;">
         <div v-for="(item,i) in packageCardList" :key="i">
-          <!-- 普通文件 -->
-          <div v-if="item.cardType === 2" class="float-left m-l-10 cursor-d windows-icon-dialog" @contextmenu="fileDialogClickRight(item,$event)">
-            <!-- 文件夹图标 -->
+          <!-- 普通文件 --general card -->
+          <div v-if="item.cardType === 2" class="float-left m-l-10 cursor-d windows-icon-dialog" :class="{
+                'text-gray-light': item.colorStyle===0,
+                'text-red': item.colorStyle===1,
+                'text-orange': item.colorStyle===2,
+                'super-member-color': item.colorStyle===3,
+                'text-green': item.colorStyle===4,
+                'text-blue': item.colorStyle===5}" @contextmenu="fileDialogClickRight(item,$event)">
+            <!-- 文件夹图标 -- card icon -->
             <div>
-              <i class="iconfont icon-24gl-fileText color-white font-size-35-plus"></i>
+              <i class="iconfont icon-kapian font-size-35-plus"></i>
             </div>
-            <!-- 文件夹名称 -->
+            <!-- 文件夹名称 -- card name -->
             <div class="font-size-12">
-              <span class="color-white">{{item.name}}</span>
+              <span>{{item.name}}</span>
             </div>
           </div>
         </div>
       </div>
     </el-dialog>
-    <!-- 创建卡片弹框 -->
+    <!-- 创建卡片弹框 -- create card dialog -->
     <el-dialog v-model="openCreateFile" width="30%" title="create card" :before-close="closeCreateFile">
       <el-form>
         <el-form-item label="card name：">
@@ -118,7 +136,7 @@
         </span>
       </template>
     </el-dialog>
-    <!-- 重看卡片弹框 -->
+    <!-- 重看卡片弹框 -- read card dialog -->
     <el-dialog v-model="openSelectFile" width="30%" title="see card">
       <el-form>
         <el-form-item label="card name：">
@@ -138,7 +156,7 @@
         </span>
       </template>
     </el-dialog>
-    <!-- 移动卡片弹框 -->
+    <!-- 移动卡片弹框 -- move card dialog -->
     <el-dialog v-model="openMoveFile" width="30%" title="move card" :before-close="closeMoveFile">
       <el-form>
         <el-form-item label="card package">
@@ -151,6 +169,27 @@
         <span class="dialog-footer">
           <el-button @click="closeMoveFile">cancel</el-button>
           <el-button type="primary" @click="moveCardBtn">yes</el-button>
+        </span>
+      </template>
+    </el-dialog>
+    <!-- 卡包颜色更改弹框 -- card or desks color style dialog -->
+    <el-dialog v-model="openPackageColor" width="30%" title="customize card color" :before-close="closeOpenPackageColor">
+      <el-form>
+        <el-form-item label="color style">
+          <el-select v-model="packageColorForm.colorStyle" ref="colorStyle" placeholder="please select card color style">
+            <el-option label="default" :value="0"/>
+            <el-option label="red" :value="1"/>
+            <el-option label="orange" :value="2"/>
+            <el-option label="yellow" :value="3"/>
+            <el-option label="green" :value="4"/>
+            <el-option label="blue" :value="5"/>
+          </el-select>
+        </el-form-item>
+      </el-form>
+      <template #footer>
+        <span class="dialog-footer">
+          <el-button @click="closeOpenPackageColor">cancel</el-button>
+          <el-button type="primary" @click="cardColorStyleBtn">yes</el-button>
         </span>
       </template>
     </el-dialog>
@@ -187,8 +226,9 @@ export default {
   },
   data() {
     return {
+      // default background image
       bgImageUrl: bgTwo,
-      // 文件开关
+      // 文件开关 -- card open dialog switch:1.false: close,2.true: open
       isFileOpen: false,
       // file event
       fileEventVal: {},
@@ -247,6 +287,21 @@ export default {
             }
           },
           {
+            label: "color",
+            click: () => {
+              // get card data
+              let body = {
+                id: this.fileDataVal.id
+              }
+              getCard(body).then(res => {
+                if (res.data.code === 200) {
+                  this.packageColorForm = res.data.data.card
+                  this.openPackageColor = true
+                }
+              })
+            }
+          },
+          {
             label: "move",
             click: () => {
               // get card data
@@ -266,7 +321,7 @@ export default {
           },
         ]
       },
-      // 文件 dialog 开关
+      // 文件 dialog 开关 -- card in decks open dialog switch:1.false: close,2.true: open
       isDialogFileOpen: false,
       // file event
       dialogFileEventVal: {},
@@ -323,22 +378,37 @@ export default {
                 }
               })
             }
+          },
+          {
+            label: "color",
+            click: () => {
+              // get card data
+              let body = {
+                id: this.dialogFileDataVal.id
+              }
+              getCard(body).then(res => {
+                if (res.data.code === 200) {
+                  this.packageColorForm = res.data.data.card
+                  this.openPackageColor = true
+                }
+              })
+            }
           }
         ]
       },
-      // 文件夹相关
+      // 文件夹相关 -- decks open dialog switch:1.false: close,2.true: open
       isOpen: false,
-      // package event
+      // decks event
       eventVal: {},
-      // package event data
+      // decks event data
       eventData: {},
-      // package menus
+      // decks menus
       menus: {
         menus: [
           {
             label: "rename",
             click: () => {
-              // get card package data
+              // get card decks data
               let body = {
                 id: this.eventData.id
               }
@@ -355,6 +425,21 @@ export default {
             click: () => {
               this.getPackageCardList(this.eventData.id)
               this.openFolder = true
+            }
+          },
+          {
+            label: "color",
+            click: () => {
+              // get card decks data
+              let body = {
+                id: this.eventData.id
+              }
+              getCard(body).then(res => {
+                if (res.data.code === 200) {
+                  this.packageColorForm = res.data.data.card
+                  this.openPackageColor = true
+                }
+              })
             }
           },
           {
@@ -378,26 +463,28 @@ export default {
           }
         ]
       },
-      // 卡包弹框开关
+      // 卡包弹框开关 -- create decks open dialog switch:1.false: close,2.true: open
       openCreateFolder: false,
-      // 卡片弹框开关
+      // 卡片弹框开关 -- create card open dialog switch:1.false: close,2.true: open
       openCreateFile: false,
-      // 查看卡片弹框开关
+      // 查看卡片弹框开关 -- read card  open dialog switch:1.false: close,2.true: open
       openSelectFile: false,
       // is login
       isLogin: "NOT",
       // list
       list: [],
-      // card package form
+      // card decks form
       packageForm: {
         cardType: 1,
         cardOfIs: 0,
+        colorStyle: 0,
         name: ""
       },
       // card form
       cardForm: {
         cardType: 2,
         cardOfIs: 0,
+        colorStyle: 0,
         name: "",
         content: ""
       },
@@ -405,14 +492,20 @@ export default {
       cardMoveForm: {},
       // select card form
       selectCardForm: {},
-      // select package option
+      // select decks option
       selectPackageOption: [],
       // open Move card switch default close
       openMoveFile: false,
-      // card list in card package
+      // card list in card decks
       packageCardList: [],
-      // open card package switch
-      openFolder: false
+      // open card decks switch
+      openFolder: false,
+      // card decks color style dialog switch default false not open
+      openPackageColor: false,
+      // decks color style form
+      packageColorForm: {
+        colorStyle: ""
+      }
     }
   },
   created() {
@@ -420,7 +513,13 @@ export default {
     this.getUserData()
   },
   methods: {
-    // package card list
+    // close decks card color style dialog
+    closeOpenPackageColor() {
+      this.openPackageColor = false
+      this.packageColorForm = {}
+      this.packageColorForm.colorStyle = ""
+    },
+    // decks card list
     getPackageCardList(id) {
       let body = {
         packageId: id
@@ -431,10 +530,32 @@ export default {
         }
       })
     },
+    // color style yes button
+    cardColorStyleBtn() {
+      if (this.packageColorForm.colorStyle === "") {
+        this.msgError("please select color style")
+        this.refFocus(this.$refs.colorStyle)
+      } else {
+        cardSave(this.packageColorForm).then(res => {
+          if (res.data.code === 200) {
+            this.msgSuccess("style customize successfully")
+            this.openPackageColor = false
+            this.packageColorForm = {}
+            this.packageColorForm.colorStyle = ""
+            this.getCardList()
+            if (this.eventData.id) {
+              this.getPackageCardList(this.eventData.id)
+            }
+          } else {
+            this.msgError("setting error")
+          }
+        })
+      }
+    },
     // move card button
     moveCardBtn() {
       if (this.cardMoveForm.cardOfId === "") {
-        this.msgError("please select card package")
+        this.msgError("please select card decks")
         this.refFocus(this.$refs.cardMove)
       } else {
         cardSave(this.cardMoveForm).then(res => {
@@ -488,16 +609,16 @@ export default {
       this.cardForm.content = ""
       this.openCreateFile = false
     },
-    // close card package
+    // close card decks
     closeCreateFolder() {
       this.packageForm.id = ""
       this.packageForm.name = ""
       this.openCreateFolder = false
     },
-    // create card package
+    // create card decks
     createCardPackageBtn() {
       if (this.packageForm.name === "") {
-        this.msgError("please input card package name")
+        this.msgError("please input card decks name")
         this.refFocus(this.$refs.packageName)
       } else {
         cardSave(this.packageForm).then(res => {
@@ -520,7 +641,7 @@ export default {
         }
       })
     },
-    // card package list
+    // card decks list
     getCardPackageList() {
       packageList().then(res => {
         if (res.data.code === 200) {
@@ -528,7 +649,7 @@ export default {
         }
       })
     },
-    // 文件右键
+    // 文件右键 -- card right click's content
     fileClickRight(row,event) {
       this.isFileOpen = false
       nextTick(() => {
@@ -538,7 +659,7 @@ export default {
       })
       event.preventDefault()
     },
-    // dialog 文件右键
+    // dialog 文件右键 -- card in decks right click's content
     fileDialogClickRight(row,event) {
       this.isDialogFileOpen = false
       nextTick(() => {
@@ -548,7 +669,7 @@ export default {
       })
       event.preventDefault()
     },
-    // 文件卡包右键
+    // 文件卡包右键 -- decks right click's content
     clickRight(row,event) {
       this.isOpen = false
       nextTick(() => {
@@ -558,11 +679,11 @@ export default {
       })
       event.preventDefault()
     },
-    // 创建卡包按钮
+    // 创建卡包按钮 -- create decks button
     createFolderBtn() {
       this.openCreateFolder = true
     },
-    // 创建卡片按钮
+    // 创建卡片按钮 -- create card button
     createFileBtn() {
       this.openCreateFile = true
     },
@@ -574,6 +695,7 @@ export default {
         this.routerPath("/login")
       },2000)
     },
+    // get user data function
     getUserData() {
       getUserData().then(res => {
         if (res.data.code === 200) {

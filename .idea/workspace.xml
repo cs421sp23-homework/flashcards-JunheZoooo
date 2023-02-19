@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aeb78e6f-3dc2-4ffb-b7f6-e78cac5c3916" name="变更" comment="1.delete on file" />
+    <list default="true" id="aeb78e6f-3dc2-4ffb-b7f6-e78cac5c3916" name="变更" comment="1.update readme.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/windows_card_manage.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/windows_card_manage.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/windowscardmanage/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/windowscardmanage/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/windowscardmanage/entity/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/windowscardmanage/entity/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/windowscardmanage/entity/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/windowscardmanage/entity/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/windows-card-manage-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/windows-card-manage-ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/windows-card-manage-ui/src/assets/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/windows-card-manage-ui/src/assets/public.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/windows-card-manage-ui/src/views/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/windows-card-manage-ui/src/views/index.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +57,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
   </component>
   <component name="RecentsManager">
@@ -94,7 +105,7 @@
       <workItem from="1676728146947" duration="1299000" />
       <workItem from="1676730309744" duration="213000" />
       <workItem from="1676730549770" duration="345000" />
-      <workItem from="1676731170554" duration="582000" />
+      <workItem from="1676731170554" duration="6234000" />
     </task>
     <task id="LOCAL-00001" summary="1.this is the first try push">
       <created>1676728410455</created>
@@ -110,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676729371418</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1.update readme.md">
+      <created>1676733373263</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676733373263</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +163,7 @@
     </ignored-roots>
     <MESSAGE value="1.this is the first try push" />
     <MESSAGE value="1.delete on file" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.delete on file" />
+    <MESSAGE value="1.update readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.update readme.md" />
   </component>
 </project>

@@ -40,6 +40,9 @@ public class Card {
     /** when it is a card：card content */
     private String content;
 
+    /** setting card color style: 0.default 1.red 2.orange 3.yellow 4.green 5.blue */
+    private Integer colorStyle;
+
     /** create time */
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createTime;
