@@ -1,0 +1,682 @@
+Index: ui/windows-card-manage-ui/package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"windows-card-manage-ui\",\r\n  \"version\": \"0.0.0\",\r\n  \"lockfileVersion\": 1,\r\n  \"requires\": true,\r\n  \"dependencies\": {\r\n    \"@babel/parser\": {\r\n      \"version\": \"7.20.15\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@babel/parser/-/parser-7.20.15.tgz\",\r\n      \"integrity\": \"sha512-DI4a1oZuf8wC+oAJA9RW6ga3Zbe8RZFt7kD9i4qAspz3I/yHet1VvC3DiSy/fsUvv5pvJuNPh0LPOdCcqinDPg==\"\r\n    },\r\n    \"@ctrl/tinycolor\": {\r\n      \"version\": \"3.5.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@ctrl/tinycolor/-/tinycolor-3.5.0.tgz\",\r\n      \"integrity\": \"sha512-tlJpwF40DEQcfR/QF+wNMVyGMaO9FQp6Z1Wahj4Gk3CJQYHwA2xVG7iKDFdW6zuxZY9XWOpGcfNCTsX4McOsOg==\"\r\n    },\r\n    \"@element-plus/icons-vue\": {\r\n      \"version\": \"2.0.10\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@element-plus/icons-vue/-/icons-vue-2.0.10.tgz\",\r\n      \"integrity\": \"sha512-ygEZ1mwPjcPo/OulhzLE7mtDrQBWI8vZzEWSNB2W/RNCRjoQGwbaK4N8lV4rid7Ts4qvySU3njMN7YCiSlSaTQ==\"\r\n    },\r\n    \"@esbuild/android-arm\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/android-arm/-/android-arm-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-N9x1CMXVhtWEAMS7pNNONyA14f71VPQN9Cnavj1XQh6T7bskqiLLrSca4O0Vr8Wdcga943eThxnVp3JLnBMYtw==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/android-arm64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/android-arm64/-/android-arm64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-MIGl6p5sc3RDTLLkYL1MyL8BMRN4tLMRCn+yRJJmEDvYZ2M7tmAf80hx1kbNEUX2KJ50RRtxZ4JHLvCfuB6kBg==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/android-x64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/android-x64/-/android-x64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-a3kTv3m0Ghh4z1DaFEuEDfz3OLONKuFvI4Xqczqx4BqLyuFaFkuaG4j2MtA6fuWEFeC5x9IvqnX7drmRq/fyAQ==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/darwin-arm64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/darwin-arm64/-/darwin-arm64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-/2agbUEfmxWHi9ARTX6OQ/KgXnOWfsNlTeLcoV7HSuSTv63E4DqtAc+2XqGw1KHxKMHGZgbVCZge7HXWX9Vn+w==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/darwin-x64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/darwin-x64/-/darwin-x64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-2By45OBHulkd9Svy5IOCZt376Aa2oOkiE9QWUK9fe6Tb+WDr8hXL3dpqi+DeLiMed8tVXspzsTAvd0jUl96wmg==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/freebsd-arm64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/freebsd-arm64/-/freebsd-arm64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-mt+cxZe1tVx489VTb4mBAOo2aKSnJ33L9fr25JXpqQqzbUIw/yzIzi+NHwAXK2qYV1lEFp4OoVeThGjUbmWmdw==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/freebsd-x64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/freebsd-x64/-/freebsd-x64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-8ScTdNJl5idAKjH8zGAsN7RuWcyHG3BAvMNpKOBaqqR7EbUhhVHOqXRdL7oZvz8WNHL2pr5+eIT5c65kA6NHug==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/linux-arm\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/linux-arm/-/linux-arm-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-iihzrWbD4gIT7j3caMzKb/RsFFHCwqqbrbH9SqUSRrdXkXaygSZCZg1FybsZz57Ju7N/SHEgPyaR0LZ8Zbe9gQ==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/linux-arm64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/linux-arm64/-/linux-arm64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-7S8gJnSlqKGVJunnMCrXHU9Q8Q/tQIxk/xL8BqAP64wchPCTzuM6W3Ra8cIa1HIflAvDnNOt2jaL17vaW+1V0g==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/linux-ia32\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/linux-ia32/-/linux-ia32-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-kiX69+wcPAdgl3Lonh1VI7MBr16nktEvOfViszBSxygRQqSpzv7BffMKRPMFwzeJGPxcio0pdD3kYQGpqQ2SSg==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/linux-loong64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/linux-loong64/-/linux-loong64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-dTzNnQwembNDhd654cA4QhbS9uDdXC3TKqMJjgOWsC0yNCbpzfWoXdZvp0mY7HU6nzk5E0zpRGGx3qoQg8T2DQ==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/linux-mips64el\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/linux-mips64el/-/linux-mips64el-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-ezbDkp2nDl0PfIUn0CsQ30kxfcLTlcx4Foz2kYv8qdC6ia2oX5Q3E/8m6lq84Dj/6b0FrkgD582fJMIfHhJfSw==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/linux-ppc64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/linux-ppc64/-/linux-ppc64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-dzS678gYD1lJsW73zrFhDApLVdM3cUF2MvAa1D8K8KtcSKdLBPP4zZSLy6LFZ0jYqQdQ29bjAHJDgz0rVbLB3g==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/linux-riscv64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/linux-riscv64/-/linux-riscv64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-ylNlVsxuFjZK8DQtNUwiMskh6nT0vI7kYl/4fZgV1llP5d6+HIeL/vmmm3jpuoo8+NuXjQVZxmKuhDApK0/cKw==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/linux-s390x\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/linux-s390x/-/linux-s390x-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-gzy7nUTO4UA4oZ2wAMXPNBGTzZFP7mss3aKR2hH+/4UUkCOyqmjXiKpzGrY2TlEUhbbejzXVKKGazYcQTZWA/w==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/linux-x64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/linux-x64/-/linux-x64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-mdPjPxfnmoqhgpiEArqi4egmBAMYvaObgn4poorpUaqmvzzbvqbowRllQ+ZgzGVMGKaPkqUmPDOOFQRUFDmeUw==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/netbsd-x64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/netbsd-x64/-/netbsd-x64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-/PzmzD/zyAeTUsduZa32bn0ORug+Jd1EGGAUJvqfeixoEISYpGnAezN6lnJoskauoai0Jrs+XSyvDhppCPoKOA==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/openbsd-x64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/openbsd-x64/-/openbsd-x64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-2yaWJhvxGEz2RiftSk0UObqJa/b+rIAjnODJgv2GbGGpRwAfpgzyrg1WLK8rqA24mfZa9GvpjLcBBg8JHkoodg==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/sunos-x64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/sunos-x64/-/sunos-x64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-xtVUiev38tN0R3g8VhRfN7Zl42YCJvyBhRKw1RJjwE1d2emWTVToPLNEQj/5Qxc6lVFATDiy6LjVHYhIPrLxzw==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/win32-arm64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/win32-arm64/-/win32-arm64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-ga8+JqBDHY4b6fQAmOgtJJue36scANy4l/rL97W+0wYmijhxKetzZdKOJI7olaBaMhWt8Pac2McJdZLxXWUEQw==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/win32-ia32\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/win32-ia32/-/win32-ia32-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-WnsKaf46uSSF/sZhwnqE4L/F89AYNMiD4YtEcYekBt9Q7nj0DiId2XH2Ng2PHM54qi5oPrQ8luuzGszqi/veig==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@esbuild/win32-x64\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@esbuild/win32-x64/-/win32-x64-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-y+EHuSchhL7FjHgvQL/0fnnFmO4T1bhvWANX6gcnqTjtnKWbTvUMCpGnv2+t+31d7RzyEAYAd4u2fnIhHL6N/Q==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"@eslint/eslintrc\": {\r\n      \"version\": \"1.4.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@eslint/eslintrc/-/eslintrc-1.4.1.tgz\",\r\n      \"integrity\": \"sha512-XXrH9Uarn0stsyldqDYq8r++mROmWRI1xKMXa640Bb//SY1+ECYX6VzT6Lcx5frD0V30XieqJ0oX9I2Xj5aoMA==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"ajv\": \"^6.12.4\",\r\n        \"debug\": \"^4.3.2\",\r\n        \"espree\": \"^9.4.0\",\r\n        \"globals\": \"^13.19.0\",\r\n        \"ignore\": \"^5.2.0\",\r\n        \"import-fresh\": \"^3.2.1\",\r\n        \"js-yaml\": \"^4.1.0\",\r\n        \"minimatch\": \"^3.1.2\",\r\n        \"strip-json-comments\": \"^3.1.1\"\r\n      }\r\n    },\r\n    \"@floating-ui/core\": {\r\n      \"version\": \"1.2.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@floating-ui/core/-/core-1.2.0.tgz\",\r\n      \"integrity\": \"sha512-GHUXPEhMEmTpnpIfesFA2KAoMJPb1SPQw964tToQwt+BbGXdhqTCWT1rOb0VURGylsxsYxiGMnseJ3IlclVpVA==\"\r\n    },\r\n    \"@floating-ui/dom\": {\r\n      \"version\": \"1.2.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@floating-ui/dom/-/dom-1.2.0.tgz\",\r\n      \"integrity\": \"sha512-QXzg57o1cjLz3cGETzKXjI3kx1xyS49DW9l7kV2jw2c8Yftd434t2hllX0sVGn2Q8MtcW/4pNm8bfE1/4n6mng==\",\r\n      \"requires\": {\r\n        \"@floating-ui/core\": \"^1.2.0\"\r\n      }\r\n    },\r\n    \"@humanwhocodes/config-array\": {\r\n      \"version\": \"0.11.8\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@humanwhocodes/config-array/-/config-array-0.11.8.tgz\",\r\n      \"integrity\": \"sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"@humanwhocodes/object-schema\": \"^1.2.1\",\r\n        \"debug\": \"^4.1.1\",\r\n        \"minimatch\": \"^3.0.5\"\r\n      }\r\n    },\r\n    \"@humanwhocodes/module-importer\": {\r\n      \"version\": \"1.0.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@humanwhocodes/module-importer/-/module-importer-1.0.1.tgz\",\r\n      \"integrity\": \"sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==\",\r\n      \"dev\": true\r\n    },\r\n    \"@humanwhocodes/object-schema\": {\r\n      \"version\": \"1.2.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz\",\r\n      \"integrity\": \"sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==\",\r\n      \"dev\": true\r\n    },\r\n    \"@nodelib/fs.scandir\": {\r\n      \"version\": \"2.1.5\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz\",\r\n      \"integrity\": \"sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"@nodelib/fs.stat\": \"2.0.5\",\r\n        \"run-parallel\": \"^1.1.9\"\r\n      }\r\n    },\r\n    \"@nodelib/fs.stat\": {\r\n      \"version\": \"2.0.5\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz\",\r\n      \"integrity\": \"sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==\",\r\n      \"dev\": true\r\n    },\r\n    \"@nodelib/fs.walk\": {\r\n      \"version\": \"1.2.8\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@nodelib/fs.walk/-/fs.walk-1.2.8.tgz\",\r\n      \"integrity\": \"sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"@nodelib/fs.scandir\": \"2.1.5\",\r\n        \"fastq\": \"^1.6.0\"\r\n      }\r\n    },\r\n    \"@types/lodash\": {\r\n      \"version\": \"4.14.191\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@types/lodash/-/lodash-4.14.191.tgz\",\r\n      \"integrity\": \"sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==\"\r\n    },\r\n    \"@types/lodash-es\": {\r\n      \"version\": \"4.17.6\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@types/lodash-es/-/lodash-es-4.17.6.tgz\",\r\n      \"integrity\": \"sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==\",\r\n      \"requires\": {\r\n        \"@types/lodash\": \"*\"\r\n      }\r\n    },\r\n    \"@types/web-bluetooth\": {\r\n      \"version\": \"0.0.16\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@types/web-bluetooth/-/web-bluetooth-0.0.16.tgz\",\r\n      \"integrity\": \"sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==\"\r\n    },\r\n    \"@vitejs/plugin-vue\": {\r\n      \"version\": \"4.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vitejs/plugin-vue/-/plugin-vue-4.0.0.tgz\",\r\n      \"integrity\": \"sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==\",\r\n      \"dev\": true\r\n    },\r\n    \"@vue/compiler-core\": {\r\n      \"version\": \"3.2.47\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vue/compiler-core/-/compiler-core-3.2.47.tgz\",\r\n      \"integrity\": \"sha512-p4D7FDnQb7+YJmO2iPEv0SQNeNzcbHdGByJDsT4lynf63AFkOTFN07HsiRSvjGo0QrxR/o3d0hUyNCUnBU2Tig==\",\r\n      \"requires\": {\r\n        \"@babel/parser\": \"^7.16.4\",\r\n        \"@vue/shared\": \"3.2.47\",\r\n        \"estree-walker\": \"^2.0.2\",\r\n        \"source-map\": \"^0.6.1\"\r\n      }\r\n    },\r\n    \"@vue/compiler-dom\": {\r\n      \"version\": \"3.2.47\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vue/compiler-dom/-/compiler-dom-3.2.47.tgz\",\r\n      \"integrity\": \"sha512-dBBnEHEPoftUiS03a4ggEig74J2YBZ2UIeyfpcRM2tavgMWo4bsEfgCGsu+uJIL/vax9S+JztH8NmQerUo7shQ==\",\r\n      \"requires\": {\r\n        \"@vue/compiler-core\": \"3.2.47\",\r\n        \"@vue/shared\": \"3.2.47\"\r\n      }\r\n    },\r\n    \"@vue/compiler-sfc\": {\r\n      \"version\": \"3.2.47\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vue/compiler-sfc/-/compiler-sfc-3.2.47.tgz\",\r\n      \"integrity\": \"sha512-rog05W+2IFfxjMcFw10tM9+f7i/+FFpZJJ5XHX72NP9eC2uRD+42M3pYcQqDXVYoj74kHMSEdQ/WmCjt8JFksQ==\",\r\n      \"requires\": {\r\n        \"@babel/parser\": \"^7.16.4\",\r\n        \"@vue/compiler-core\": \"3.2.47\",\r\n        \"@vue/compiler-dom\": \"3.2.47\",\r\n        \"@vue/compiler-ssr\": \"3.2.47\",\r\n        \"@vue/reactivity-transform\": \"3.2.47\",\r\n        \"@vue/shared\": \"3.2.47\",\r\n        \"estree-walker\": \"^2.0.2\",\r\n        \"magic-string\": \"^0.25.7\",\r\n        \"postcss\": \"^8.1.10\",\r\n        \"source-map\": \"^0.6.1\"\r\n      }\r\n    },\r\n    \"@vue/compiler-ssr\": {\r\n      \"version\": \"3.2.47\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vue/compiler-ssr/-/compiler-ssr-3.2.47.tgz\",\r\n      \"integrity\": \"sha512-wVXC+gszhulcMD8wpxMsqSOpvDZ6xKXSVWkf50Guf/S+28hTAXPDYRTbLQ3EDkOP5Xz/+SY37YiwDquKbJOgZw==\",\r\n      \"requires\": {\r\n        \"@vue/compiler-dom\": \"3.2.47\",\r\n        \"@vue/shared\": \"3.2.47\"\r\n      }\r\n    },\r\n    \"@vue/devtools-api\": {\r\n      \"version\": \"6.5.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.5.0.tgz\",\r\n      \"integrity\": \"sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==\"\r\n    },\r\n    \"@vue/reactivity\": {\r\n      \"version\": \"3.2.47\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vue/reactivity/-/reactivity-3.2.47.tgz\",\r\n      \"integrity\": \"sha512-7khqQ/75oyyg+N/e+iwV6lpy1f5wq759NdlS1fpAhFXa8VeAIKGgk2E/C4VF59lx5b+Ezs5fpp/5WsRYXQiKxQ==\",\r\n      \"requires\": {\r\n        \"@vue/shared\": \"3.2.47\"\r\n      }\r\n    },\r\n    \"@vue/reactivity-transform\": {\r\n      \"version\": \"3.2.47\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vue/reactivity-transform/-/reactivity-transform-3.2.47.tgz\",\r\n      \"integrity\": \"sha512-m8lGXw8rdnPVVIdIFhf0LeQ/ixyHkH5plYuS83yop5n7ggVJU+z5v0zecwEnX7fa7HNLBhh2qngJJkxpwEEmYA==\",\r\n      \"requires\": {\r\n        \"@babel/parser\": \"^7.16.4\",\r\n        \"@vue/compiler-core\": \"3.2.47\",\r\n        \"@vue/shared\": \"3.2.47\",\r\n        \"estree-walker\": \"^2.0.2\",\r\n        \"magic-string\": \"^0.25.7\"\r\n      }\r\n    },\r\n    \"@vue/runtime-core\": {\r\n      \"version\": \"3.2.47\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vue/runtime-core/-/runtime-core-3.2.47.tgz\",\r\n      \"integrity\": \"sha512-RZxbLQIRB/K0ev0K9FXhNbBzT32H9iRtYbaXb0ZIz2usLms/D55dJR2t6cIEUn6vyhS3ALNvNthI+Q95C+NOpA==\",\r\n      \"requires\": {\r\n        \"@vue/reactivity\": \"3.2.47\",\r\n        \"@vue/shared\": \"3.2.47\"\r\n      }\r\n    },\r\n    \"@vue/runtime-dom\": {\r\n      \"version\": \"3.2.47\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vue/runtime-dom/-/runtime-dom-3.2.47.tgz\",\r\n      \"integrity\": \"sha512-ArXrFTjS6TsDei4qwNvgrdmHtD930KgSKGhS5M+j8QxXrDJYLqYw4RRcDy1bz1m1wMmb6j+zGLifdVHtkXA7gA==\",\r\n      \"requires\": {\r\n        \"@vue/runtime-core\": \"3.2.47\",\r\n        \"@vue/shared\": \"3.2.47\",\r\n        \"csstype\": \"^2.6.8\"\r\n      }\r\n    },\r\n    \"@vue/server-renderer\": {\r\n      \"version\": \"3.2.47\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vue/server-renderer/-/server-renderer-3.2.47.tgz\",\r\n      \"integrity\": \"sha512-dN9gc1i8EvmP9RCzvneONXsKfBRgqFeFZLurmHOveL7oH6HiFXJw5OGu294n1nHc/HMgTy6LulU/tv5/A7f/LA==\",\r\n      \"requires\": {\r\n        \"@vue/compiler-ssr\": \"3.2.47\",\r\n        \"@vue/shared\": \"3.2.47\"\r\n      }\r\n    },\r\n    \"@vue/shared\": {\r\n      \"version\": \"3.2.47\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vue/shared/-/shared-3.2.47.tgz\",\r\n      \"integrity\": \"sha512-BHGyyGN3Q97EZx0taMQ+OLNuZcW3d37ZEVmEAyeoA9ERdGvm9Irc/0Fua8SNyOtV1w6BS4q25wbMzJujO9HIfQ==\"\r\n    },\r\n    \"@vueuse/core\": {\r\n      \"version\": \"9.12.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vueuse/core/-/core-9.12.0.tgz\",\r\n      \"integrity\": \"sha512-h/Di8Bvf6xRcvS/PvUVheiMYYz3U0tH3X25YxONSaAUBa841ayMwxkuzx/DGUMCW/wHWzD8tRy2zYmOC36r4sg==\",\r\n      \"requires\": {\r\n        \"@types/web-bluetooth\": \"^0.0.16\",\r\n        \"@vueuse/metadata\": \"9.12.0\",\r\n        \"@vueuse/shared\": \"9.12.0\",\r\n        \"vue-demi\": \"*\"\r\n      }\r\n    },\r\n    \"@vueuse/metadata\": {\r\n      \"version\": \"9.12.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vueuse/metadata/-/metadata-9.12.0.tgz\",\r\n      \"integrity\": \"sha512-9oJ9MM9lFLlmvxXUqsR1wLt1uF7EVbP5iYaHJYqk+G2PbMjY6EXvZeTjbdO89HgoF5cI6z49o2zT/jD9SVoNpQ==\"\r\n    },\r\n    \"@vueuse/shared\": {\r\n      \"version\": \"9.12.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/@vueuse/shared/-/shared-9.12.0.tgz\",\r\n      \"integrity\": \"sha512-TWuJLACQ0BVithVTRbex4Wf1a1VaRuSpVeyEd4vMUWl54PzlE0ciFUshKCXnlLuD0lxIaLK4Ypj3NXYzZh4+SQ==\",\r\n      \"requires\": {\r\n        \"vue-demi\": \"*\"\r\n      }\r\n    },\r\n    \"acorn\": {\r\n      \"version\": \"8.8.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/acorn/-/acorn-8.8.2.tgz\",\r\n      \"integrity\": \"sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==\",\r\n      \"dev\": true\r\n    },\r\n    \"acorn-jsx\": {\r\n      \"version\": \"5.3.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz\",\r\n      \"integrity\": \"sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"ajv\": {\r\n      \"version\": \"6.12.6\",\r\n      \"resolved\": \"https://registry.npmmirror.com/ajv/-/ajv-6.12.6.tgz\",\r\n      \"integrity\": \"sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"fast-deep-equal\": \"^3.1.1\",\r\n        \"fast-json-stable-stringify\": \"^2.0.0\",\r\n        \"json-schema-traverse\": \"^0.4.1\",\r\n        \"uri-js\": \"^4.2.2\"\r\n      }\r\n    },\r\n    \"ansi-regex\": {\r\n      \"version\": \"5.0.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/ansi-regex/-/ansi-regex-5.0.1.tgz\",\r\n      \"integrity\": \"sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"ansi-styles\": {\r\n      \"version\": \"4.3.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/ansi-styles/-/ansi-styles-4.3.0.tgz\",\r\n      \"integrity\": \"sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"color-convert\": \"^2.0.1\"\r\n      }\r\n    },\r\n    \"argparse\": {\r\n      \"version\": \"2.0.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/argparse/-/argparse-2.0.1.tgz\",\r\n      \"integrity\": \"sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==\",\r\n      \"dev\": true\r\n    },\r\n    \"async-validator\": {\r\n      \"version\": \"4.2.5\",\r\n      \"resolved\": \"https://registry.npmmirror.com/async-validator/-/async-validator-4.2.5.tgz\",\r\n      \"integrity\": \"sha512-7HhHjtERjqlNbZtqNqy2rckN/SpOOlmDliet+lP7k+eKZEjPk3DgyeU9lIXLdeLz0uBbbVp+9Qdow9wJWgwwfg==\"\r\n    },\r\n    \"asynckit\": {\r\n      \"version\": \"0.4.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/asynckit/-/asynckit-0.4.0.tgz\",\r\n      \"integrity\": \"sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==\"\r\n    },\r\n    \"axios\": {\r\n      \"version\": \"1.3.3\",\r\n      \"resolved\": \"https://registry.npmmirror.com/axios/-/axios-1.3.3.tgz\",\r\n      \"integrity\": \"sha512-eYq77dYIFS77AQlhzEL937yUBSepBfPIe8FcgEDN35vMNZKMrs81pgnyrQpwfy4NF4b4XWX1Zgx7yX+25w8QJA==\",\r\n      \"requires\": {\r\n        \"follow-redirects\": \"^1.15.0\",\r\n        \"form-data\": \"^4.0.0\",\r\n        \"proxy-from-env\": \"^1.1.0\"\r\n      }\r\n    },\r\n    \"balanced-match\": {\r\n      \"version\": \"1.0.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/balanced-match/-/balanced-match-1.0.2.tgz\",\r\n      \"integrity\": \"sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==\",\r\n      \"dev\": true\r\n    },\r\n    \"boolbase\": {\r\n      \"version\": \"1.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/boolbase/-/boolbase-1.0.0.tgz\",\r\n      \"integrity\": \"sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==\",\r\n      \"dev\": true\r\n    },\r\n    \"brace-expansion\": {\r\n      \"version\": \"1.1.11\",\r\n      \"resolved\": \"https://registry.npmmirror.com/brace-expansion/-/brace-expansion-1.1.11.tgz\",\r\n      \"integrity\": \"sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"balanced-match\": \"^1.0.0\",\r\n        \"concat-map\": \"0.0.1\"\r\n      }\r\n    },\r\n    \"callsites\": {\r\n      \"version\": \"3.1.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/callsites/-/callsites-3.1.0.tgz\",\r\n      \"integrity\": \"sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"chalk\": {\r\n      \"version\": \"4.1.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/chalk/-/chalk-4.1.2.tgz\",\r\n      \"integrity\": \"sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"ansi-styles\": \"^4.1.0\",\r\n        \"supports-color\": \"^7.1.0\"\r\n      }\r\n    },\r\n    \"color-convert\": {\r\n      \"version\": \"2.0.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/color-convert/-/color-convert-2.0.1.tgz\",\r\n      \"integrity\": \"sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"color-name\": \"~1.1.4\"\r\n      }\r\n    },\r\n    \"color-name\": {\r\n      \"version\": \"1.1.4\",\r\n      \"resolved\": \"https://registry.npmmirror.com/color-name/-/color-name-1.1.4.tgz\",\r\n      \"integrity\": \"sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==\",\r\n      \"dev\": true\r\n    },\r\n    \"combined-stream\": {\r\n      \"version\": \"1.0.8\",\r\n      \"resolved\": \"https://registry.npmmirror.com/combined-stream/-/combined-stream-1.0.8.tgz\",\r\n      \"integrity\": \"sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==\",\r\n      \"requires\": {\r\n        \"delayed-stream\": \"~1.0.0\"\r\n      }\r\n    },\r\n    \"concat-map\": {\r\n      \"version\": \"0.0.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/concat-map/-/concat-map-0.0.1.tgz\",\r\n      \"integrity\": \"sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==\",\r\n      \"dev\": true\r\n    },\r\n    \"cross-spawn\": {\r\n      \"version\": \"7.0.3\",\r\n      \"resolved\": \"https://registry.npmmirror.com/cross-spawn/-/cross-spawn-7.0.3.tgz\",\r\n      \"integrity\": \"sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"path-key\": \"^3.1.0\",\r\n        \"shebang-command\": \"^2.0.0\",\r\n        \"which\": \"^2.0.1\"\r\n      }\r\n    },\r\n    \"cssesc\": {\r\n      \"version\": \"3.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/cssesc/-/cssesc-3.0.0.tgz\",\r\n      \"integrity\": \"sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==\",\r\n      \"dev\": true\r\n    },\r\n    \"csstype\": {\r\n      \"version\": \"2.6.21\",\r\n      \"resolved\": \"https://registry.npmmirror.com/csstype/-/csstype-2.6.21.tgz\",\r\n      \"integrity\": \"sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==\"\r\n    },\r\n    \"dayjs\": {\r\n      \"version\": \"1.11.7\",\r\n      \"resolved\": \"https://registry.npmmirror.com/dayjs/-/dayjs-1.11.7.tgz\",\r\n      \"integrity\": \"sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==\"\r\n    },\r\n    \"debug\": {\r\n      \"version\": \"4.3.4\",\r\n      \"resolved\": \"https://registry.npmmirror.com/debug/-/debug-4.3.4.tgz\",\r\n      \"integrity\": \"sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"ms\": \"2.1.2\"\r\n      }\r\n    },\r\n    \"deep-is\": {\r\n      \"version\": \"0.1.4\",\r\n      \"resolved\": \"https://registry.npmmirror.com/deep-is/-/deep-is-0.1.4.tgz\",\r\n      \"integrity\": \"sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"delayed-stream\": {\r\n      \"version\": \"1.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/delayed-stream/-/delayed-stream-1.0.0.tgz\",\r\n      \"integrity\": \"sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==\"\r\n    },\r\n    \"doctrine\": {\r\n      \"version\": \"3.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/doctrine/-/doctrine-3.0.0.tgz\",\r\n      \"integrity\": \"sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"esutils\": \"^2.0.2\"\r\n      }\r\n    },\r\n    \"element-plus\": {\r\n      \"version\": \"2.2.29\",\r\n      \"resolved\": \"https://registry.npmmirror.com/element-plus/-/element-plus-2.2.29.tgz\",\r\n      \"integrity\": \"sha512-g4dcrURrKkR5uUX8n5RVnnqGnimoki9HfqS4yHHG6XwCHBkZGozdq4x+478BzeWUe31h++BO+7dakSx4VnM8RQ==\",\r\n      \"requires\": {\r\n        \"@ctrl/tinycolor\": \"^3.4.1\",\r\n        \"@element-plus/icons-vue\": \"^2.0.6\",\r\n        \"@floating-ui/dom\": \"^1.0.1\",\r\n        \"@popperjs/core\": \"npm:@sxzz/popperjs-es@^2.11.7\",\r\n        \"@types/lodash\": \"^4.14.182\",\r\n        \"@types/lodash-es\": \"^4.17.6\",\r\n        \"@vueuse/core\": \"^9.1.0\",\r\n        \"async-validator\": \"^4.2.5\",\r\n        \"dayjs\": \"^1.11.3\",\r\n        \"escape-html\": \"^1.0.3\",\r\n        \"lodash\": \"^4.17.21\",\r\n        \"lodash-es\": \"^4.17.21\",\r\n        \"lodash-unified\": \"^1.0.2\",\r\n        \"memoize-one\": \"^6.0.0\",\r\n        \"normalize-wheel-es\": \"^1.2.0\"\r\n      },\r\n      \"dependencies\": {\r\n        \"@popperjs/core\": {\r\n          \"version\": \"npm:@sxzz/popperjs-es@2.11.7\",\r\n          \"resolved\": \"https://registry.npmjs.org/@sxzz/popperjs-es/-/popperjs-es-2.11.7.tgz\",\r\n          \"integrity\": \"sha512-Ccy0NlLkzr0Ex2FKvh2X+OyERHXJ88XJ1MXtsI9y9fGexlaXaVTPzBCRBwIxFkORuOb+uBqeu+RqnpgYTEZRUQ==\"\r\n        }\r\n      }\r\n    },\r\n    \"esbuild\": {\r\n      \"version\": \"0.16.17\",\r\n      \"resolved\": \"https://registry.npmmirror.com/esbuild/-/esbuild-0.16.17.tgz\",\r\n      \"integrity\": \"sha512-G8LEkV0XzDMNwXKgM0Jwu3nY3lSTwSGY6XbxM9cr9+s0T/qSV1q1JVPBGzm3dcjhCic9+emZDmMffkwgPeOeLg==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"@esbuild/android-arm\": \"0.16.17\",\r\n        \"@esbuild/android-arm64\": \"0.16.17\",\r\n        \"@esbuild/android-x64\": \"0.16.17\",\r\n        \"@esbuild/darwin-arm64\": \"0.16.17\",\r\n        \"@esbuild/darwin-x64\": \"0.16.17\",\r\n        \"@esbuild/freebsd-arm64\": \"0.16.17\",\r\n        \"@esbuild/freebsd-x64\": \"0.16.17\",\r\n        \"@esbuild/linux-arm\": \"0.16.17\",\r\n        \"@esbuild/linux-arm64\": \"0.16.17\",\r\n        \"@esbuild/linux-ia32\": \"0.16.17\",\r\n        \"@esbuild/linux-loong64\": \"0.16.17\",\r\n        \"@esbuild/linux-mips64el\": \"0.16.17\",\r\n        \"@esbuild/linux-ppc64\": \"0.16.17\",\r\n        \"@esbuild/linux-riscv64\": \"0.16.17\",\r\n        \"@esbuild/linux-s390x\": \"0.16.17\",\r\n        \"@esbuild/linux-x64\": \"0.16.17\",\r\n        \"@esbuild/netbsd-x64\": \"0.16.17\",\r\n        \"@esbuild/openbsd-x64\": \"0.16.17\",\r\n        \"@esbuild/sunos-x64\": \"0.16.17\",\r\n        \"@esbuild/win32-arm64\": \"0.16.17\",\r\n        \"@esbuild/win32-ia32\": \"0.16.17\",\r\n        \"@esbuild/win32-x64\": \"0.16.17\"\r\n      }\r\n    },\r\n    \"escape-html\": {\r\n      \"version\": \"1.0.3\",\r\n      \"resolved\": \"https://registry.npmmirror.com/escape-html/-/escape-html-1.0.3.tgz\",\r\n      \"integrity\": \"sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==\"\r\n    },\r\n    \"escape-string-regexp\": {\r\n      \"version\": \"4.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz\",\r\n      \"integrity\": \"sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==\",\r\n      \"dev\": true\r\n    },\r\n    \"eslint\": {\r\n      \"version\": \"8.33.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/eslint/-/eslint-8.33.0.tgz\",\r\n      \"integrity\": \"sha512-WjOpFQgKK8VrCnAtl8We0SUOy/oVZ5NHykyMiagV1M9r8IFpIJX7DduK6n1mpfhlG7T1NLWm2SuD8QB7KFySaA==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"@eslint/eslintrc\": \"^1.4.1\",\r\n        \"@humanwhocodes/config-array\": \"^0.11.8\",\r\n        \"@humanwhocodes/module-importer\": \"^1.0.1\",\r\n        \"@nodelib/fs.walk\": \"^1.2.8\",\r\n        \"ajv\": \"^6.10.0\",\r\n        \"chalk\": \"^4.0.0\",\r\n        \"cross-spawn\": \"^7.0.2\",\r\n        \"debug\": \"^4.3.2\",\r\n        \"doctrine\": \"^3.0.0\",\r\n        \"escape-string-regexp\": \"^4.0.0\",\r\n        \"eslint-scope\": \"^7.1.1\",\r\n        \"eslint-utils\": \"^3.0.0\",\r\n        \"eslint-visitor-keys\": \"^3.3.0\",\r\n        \"espree\": \"^9.4.0\",\r\n        \"esquery\": \"^1.4.0\",\r\n        \"esutils\": \"^2.0.2\",\r\n        \"fast-deep-equal\": \"^3.1.3\",\r\n        \"file-entry-cache\": \"^6.0.1\",\r\n        \"find-up\": \"^5.0.0\",\r\n        \"glob-parent\": \"^6.0.2\",\r\n        \"globals\": \"^13.19.0\",\r\n        \"grapheme-splitter\": \"^1.0.4\",\r\n        \"ignore\": \"^5.2.0\",\r\n        \"import-fresh\": \"^3.0.0\",\r\n        \"imurmurhash\": \"^0.1.4\",\r\n        \"is-glob\": \"^4.0.0\",\r\n        \"is-path-inside\": \"^3.0.3\",\r\n        \"js-sdsl\": \"^4.1.4\",\r\n        \"js-yaml\": \"^4.1.0\",\r\n        \"json-stable-stringify-without-jsonify\": \"^1.0.1\",\r\n        \"levn\": \"^0.4.1\",\r\n        \"lodash.merge\": \"^4.6.2\",\r\n        \"minimatch\": \"^3.1.2\",\r\n        \"natural-compare\": \"^1.4.0\",\r\n        \"optionator\": \"^0.9.1\",\r\n        \"regexpp\": \"^3.2.0\",\r\n        \"strip-ansi\": \"^6.0.1\",\r\n        \"strip-json-comments\": \"^3.1.0\",\r\n        \"text-table\": \"^0.2.0\"\r\n      }\r\n    },\r\n    \"eslint-plugin-vue\": {\r\n      \"version\": \"9.9.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/eslint-plugin-vue/-/eslint-plugin-vue-9.9.0.tgz\",\r\n      \"integrity\": \"sha512-YbubS7eK0J7DCf0U2LxvVP7LMfs6rC6UltihIgval3azO3gyDwEGVgsCMe1TmDiEkl6GdMKfRpaME6QxIYtzDQ==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"eslint-utils\": \"^3.0.0\",\r\n        \"natural-compare\": \"^1.4.0\",\r\n        \"nth-check\": \"^2.0.1\",\r\n        \"postcss-selector-parser\": \"^6.0.9\",\r\n        \"semver\": \"^7.3.5\",\r\n        \"vue-eslint-parser\": \"^9.0.1\",\r\n        \"xml-name-validator\": \"^4.0.0\"\r\n      }\r\n    },\r\n    \"eslint-scope\": {\r\n      \"version\": \"7.1.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/eslint-scope/-/eslint-scope-7.1.1.tgz\",\r\n      \"integrity\": \"sha512-QKQM/UXpIiHcLqJ5AOyIW7XZmzjkzQXYE54n1++wb0u9V/abW3l9uQnxX8Z5Xd18xyKIMTUAyQ0k1e8pz6LUrw==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"esrecurse\": \"^4.3.0\",\r\n        \"estraverse\": \"^5.2.0\"\r\n      }\r\n    },\r\n    \"eslint-utils\": {\r\n      \"version\": \"3.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/eslint-utils/-/eslint-utils-3.0.0.tgz\",\r\n      \"integrity\": \"sha512-uuQC43IGctw68pJA1RgbQS8/NP7rch6Cwd4j3ZBtgo4/8Flj4eGE7ZYSZRN3iq5pVUv6GPdW5Z1RFleo84uLDA==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"eslint-visitor-keys\": \"^2.0.0\"\r\n      },\r\n      \"dependencies\": {\r\n        \"eslint-visitor-keys\": {\r\n          \"version\": \"2.1.0\",\r\n          \"resolved\": \"https://registry.npmmirror.com/eslint-visitor-keys/-/eslint-visitor-keys-2.1.0.tgz\",\r\n          \"integrity\": \"sha512-0rSmRBzXgDzIsD6mGdJgevzgezI534Cer5L/vyMX0kHzT/jiB43jRhd9YUlMGYLQy2zprNmoT8qasCGtY+QaKw==\",\r\n          \"dev\": true\r\n        }\r\n      }\r\n    },\r\n    \"eslint-visitor-keys\": {\r\n      \"version\": \"3.3.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/eslint-visitor-keys/-/eslint-visitor-keys-3.3.0.tgz\",\r\n      \"integrity\": \"sha512-mQ+suqKJVyeuwGYHAdjMFqjCyfl8+Ldnxuyp3ldiMBFKkvytrXUZWaiPCEav8qDHKty44bD+qV1IP4T+w+xXRA==\",\r\n      \"dev\": true\r\n    },\r\n    \"espree\": {\r\n      \"version\": \"9.4.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/espree/-/espree-9.4.1.tgz\",\r\n      \"integrity\": \"sha512-XwctdmTO6SIvCzd9810yyNzIrOrqNYV9Koizx4C/mRhf9uq0o4yHoCEU/670pOxOL/MSraektvSAji79kX90Vg==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"acorn\": \"^8.8.0\",\r\n        \"acorn-jsx\": \"^5.3.2\",\r\n        \"eslint-visitor-keys\": \"^3.3.0\"\r\n      }\r\n    },\r\n    \"esquery\": {\r\n      \"version\": \"1.4.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/esquery/-/esquery-1.4.0.tgz\",\r\n      \"integrity\": \"sha512-cCDispWt5vHHtwMY2YrAQ4ibFkAL8RbH5YGBnZBc90MolvvfkkQcJro/aZiAQUlQ3qgrYS6D6v8Gc5G5CQsc9w==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"estraverse\": \"^5.1.0\"\r\n      }\r\n    },\r\n    \"esrecurse\": {\r\n      \"version\": \"4.3.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/esrecurse/-/esrecurse-4.3.0.tgz\",\r\n      \"integrity\": \"sha512-KmfKL3b6G+RXvP8N1vr3Tq1kL/oCFgn2NYXEtqP8/L3pKapUA4G8cFVaoF3SU323CD4XypR/ffioHmkti6/Tag==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"estraverse\": \"^5.2.0\"\r\n      }\r\n    },\r\n    \"estraverse\": {\r\n      \"version\": \"5.3.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/estraverse/-/estraverse-5.3.0.tgz\",\r\n      \"integrity\": \"sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==\",\r\n      \"dev\": true\r\n    },\r\n    \"estree-walker\": {\r\n      \"version\": \"2.0.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/estree-walker/-/estree-walker-2.0.2.tgz\",\r\n      \"integrity\": \"sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==\"\r\n    },\r\n    \"esutils\": {\r\n      \"version\": \"2.0.3\",\r\n      \"resolved\": \"https://registry.npmmirror.com/esutils/-/esutils-2.0.3.tgz\",\r\n      \"integrity\": \"sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==\",\r\n      \"dev\": true\r\n    },\r\n    \"fast-deep-equal\": {\r\n      \"version\": \"3.1.3\",\r\n      \"resolved\": \"https://registry.npmmirror.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz\",\r\n      \"integrity\": \"sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==\",\r\n      \"dev\": true\r\n    },\r\n    \"fast-json-stable-stringify\": {\r\n      \"version\": \"2.1.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz\",\r\n      \"integrity\": \"sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==\",\r\n      \"dev\": true\r\n    },\r\n    \"fast-levenshtein\": {\r\n      \"version\": \"2.0.6\",\r\n      \"resolved\": \"https://registry.npmmirror.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz\",\r\n      \"integrity\": \"sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==\",\r\n      \"dev\": true\r\n    },\r\n    \"fastq\": {\r\n      \"version\": \"1.15.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/fastq/-/fastq-1.15.0.tgz\",\r\n      \"integrity\": \"sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"reusify\": \"^1.0.4\"\r\n      }\r\n    },\r\n    \"file-entry-cache\": {\r\n      \"version\": \"6.0.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/file-entry-cache/-/file-entry-cache-6.0.1.tgz\",\r\n      \"integrity\": \"sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"flat-cache\": \"^3.0.4\"\r\n      }\r\n    },\r\n    \"find-up\": {\r\n      \"version\": \"5.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/find-up/-/find-up-5.0.0.tgz\",\r\n      \"integrity\": \"sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"locate-path\": \"^6.0.0\",\r\n        \"path-exists\": \"^4.0.0\"\r\n      }\r\n    },\r\n    \"flat-cache\": {\r\n      \"version\": \"3.0.4\",\r\n      \"resolved\": \"https://registry.npmmirror.com/flat-cache/-/flat-cache-3.0.4.tgz\",\r\n      \"integrity\": \"sha512-dm9s5Pw7Jc0GvMYbshN6zchCA9RgQlzzEZX3vylR9IqFfS8XciblUXOKfW6SiuJ0e13eDYZoZV5wdrev7P3Nwg==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"flatted\": \"^3.1.0\",\r\n        \"rimraf\": \"^3.0.2\"\r\n      }\r\n    },\r\n    \"flatted\": {\r\n      \"version\": \"3.2.7\",\r\n      \"resolved\": \"https://registry.npmmirror.com/flatted/-/flatted-3.2.7.tgz\",\r\n      \"integrity\": \"sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"follow-redirects\": {\r\n      \"version\": \"1.15.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/follow-redirects/-/follow-redirects-1.15.2.tgz\",\r\n      \"integrity\": \"sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==\"\r\n    },\r\n    \"form-data\": {\r\n      \"version\": \"4.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/form-data/-/form-data-4.0.0.tgz\",\r\n      \"integrity\": \"sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==\",\r\n      \"requires\": {\r\n        \"asynckit\": \"^0.4.0\",\r\n        \"combined-stream\": \"^1.0.8\",\r\n        \"mime-types\": \"^2.1.12\"\r\n      }\r\n    },\r\n    \"fs.realpath\": {\r\n      \"version\": \"1.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/fs.realpath/-/fs.realpath-1.0.0.tgz\",\r\n      \"integrity\": \"sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==\",\r\n      \"dev\": true\r\n    },\r\n    \"fsevents\": {\r\n      \"version\": \"2.3.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/fsevents/-/fsevents-2.3.2.tgz\",\r\n      \"integrity\": \"sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==\",\r\n      \"dev\": true,\r\n      \"optional\": true\r\n    },\r\n    \"function-bind\": {\r\n      \"version\": \"1.1.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/function-bind/-/function-bind-1.1.1.tgz\",\r\n      \"integrity\": \"sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==\",\r\n      \"dev\": true\r\n    },\r\n    \"glob\": {\r\n      \"version\": \"7.2.3\",\r\n      \"resolved\": \"https://registry.npmmirror.com/glob/-/glob-7.2.3.tgz\",\r\n      \"integrity\": \"sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"fs.realpath\": \"^1.0.0\",\r\n        \"inflight\": \"^1.0.4\",\r\n        \"inherits\": \"2\",\r\n        \"minimatch\": \"^3.1.1\",\r\n        \"once\": \"^1.3.0\",\r\n        \"path-is-absolute\": \"^1.0.0\"\r\n      }\r\n    },\r\n    \"glob-parent\": {\r\n      \"version\": \"6.0.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/glob-parent/-/glob-parent-6.0.2.tgz\",\r\n      \"integrity\": \"sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"is-glob\": \"^4.0.3\"\r\n      }\r\n    },\r\n    \"globals\": {\r\n      \"version\": \"13.20.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/globals/-/globals-13.20.0.tgz\",\r\n      \"integrity\": \"sha512-Qg5QtVkCy/kv3FUSlu4ukeZDVf9ee0iXLAUYX13gbR17bnejFTzr4iS9bY7kwCf1NztRNm1t91fjOiyx4CSwPQ==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"type-fest\": \"^0.20.2\"\r\n      }\r\n    },\r\n    \"grapheme-splitter\": {\r\n      \"version\": \"1.0.4\",\r\n      \"resolved\": \"https://registry.npmmirror.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz\",\r\n      \"integrity\": \"sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"has\": {\r\n      \"version\": \"1.0.3\",\r\n      \"resolved\": \"https://registry.npmmirror.com/has/-/has-1.0.3.tgz\",\r\n      \"integrity\": \"sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"function-bind\": \"^1.1.1\"\r\n      }\r\n    },\r\n    \"has-flag\": {\r\n      \"version\": \"4.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/has-flag/-/has-flag-4.0.0.tgz\",\r\n      \"integrity\": \"sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"ignore\": {\r\n      \"version\": \"5.2.4\",\r\n      \"resolved\": \"https://registry.npmmirror.com/ignore/-/ignore-5.2.4.tgz\",\r\n      \"integrity\": \"sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"import-fresh\": {\r\n      \"version\": \"3.3.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/import-fresh/-/import-fresh-3.3.0.tgz\",\r\n      \"integrity\": \"sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"parent-module\": \"^1.0.0\",\r\n        \"resolve-from\": \"^4.0.0\"\r\n      }\r\n    },\r\n    \"imurmurhash\": {\r\n      \"version\": \"0.1.4\",\r\n      \"resolved\": \"https://registry.npmmirror.com/imurmurhash/-/imurmurhash-0.1.4.tgz\",\r\n      \"integrity\": \"sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==\",\r\n      \"dev\": true\r\n    },\r\n    \"inflight\": {\r\n      \"version\": \"1.0.6\",\r\n      \"resolved\": \"https://registry.npmmirror.com/inflight/-/inflight-1.0.6.tgz\",\r\n      \"integrity\": \"sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"once\": \"^1.3.0\",\r\n        \"wrappy\": \"1\"\r\n      }\r\n    },\r\n    \"inherits\": {\r\n      \"version\": \"2.0.4\",\r\n      \"resolved\": \"https://registry.npmmirror.com/inherits/-/inherits-2.0.4.tgz\",\r\n      \"integrity\": \"sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"is-core-module\": {\r\n      \"version\": \"2.11.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/is-core-module/-/is-core-module-2.11.0.tgz\",\r\n      \"integrity\": \"sha512-RRjxlvLDkD1YJwDbroBHMb+cukurkDWNyHx7D3oNB5x9rb5ogcksMC5wHCadcXoo67gVr/+3GFySh3134zi6rw==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"has\": \"^1.0.3\"\r\n      }\r\n    },\r\n    \"is-extglob\": {\r\n      \"version\": \"2.1.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/is-extglob/-/is-extglob-2.1.1.tgz\",\r\n      \"integrity\": \"sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"is-glob\": {\r\n      \"version\": \"4.0.3\",\r\n      \"resolved\": \"https://registry.npmmirror.com/is-glob/-/is-glob-4.0.3.tgz\",\r\n      \"integrity\": \"sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"is-extglob\": \"^2.1.1\"\r\n      }\r\n    },\r\n    \"is-path-inside\": {\r\n      \"version\": \"3.0.3\",\r\n      \"resolved\": \"https://registry.npmmirror.com/is-path-inside/-/is-path-inside-3.0.3.tgz\",\r\n      \"integrity\": \"sha512-Fd4gABb+ycGAmKou8eMftCupSir5lRxqf4aD/vd0cD2qc4HL07OjCeuHMr8Ro4CoMaeCKDB0/ECBOVWjTwUvPQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"isexe\": {\r\n      \"version\": \"2.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/isexe/-/isexe-2.0.0.tgz\",\r\n      \"integrity\": \"sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==\",\r\n      \"dev\": true\r\n    },\r\n    \"js-sdsl\": {\r\n      \"version\": \"4.3.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/js-sdsl/-/js-sdsl-4.3.0.tgz\",\r\n      \"integrity\": \"sha512-mifzlm2+5nZ+lEcLJMoBK0/IH/bDg8XnJfd/Wq6IP+xoCjLZsTOnV2QpxlVbX9bMnkl5PdEjNtBJ9Cj1NjifhQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"js-yaml\": {\r\n      \"version\": \"4.1.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/js-yaml/-/js-yaml-4.1.0.tgz\",\r\n      \"integrity\": \"sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"argparse\": \"^2.0.1\"\r\n      }\r\n    },\r\n    \"json-schema-traverse\": {\r\n      \"version\": \"0.4.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz\",\r\n      \"integrity\": \"sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==\",\r\n      \"dev\": true\r\n    },\r\n    \"json-stable-stringify-without-jsonify\": {\r\n      \"version\": \"1.0.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz\",\r\n      \"integrity\": \"sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==\",\r\n      \"dev\": true\r\n    },\r\n    \"levn\": {\r\n      \"version\": \"0.4.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/levn/-/levn-0.4.1.tgz\",\r\n      \"integrity\": \"sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"prelude-ls\": \"^1.2.1\",\r\n        \"type-check\": \"~0.4.0\"\r\n      }\r\n    },\r\n    \"locate-path\": {\r\n      \"version\": \"6.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/locate-path/-/locate-path-6.0.0.tgz\",\r\n      \"integrity\": \"sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"p-locate\": \"^5.0.0\"\r\n      }\r\n    },\r\n    \"lodash\": {\r\n      \"version\": \"4.17.21\",\r\n      \"resolved\": \"https://registry.npmmirror.com/lodash/-/lodash-4.17.21.tgz\",\r\n      \"integrity\": \"sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==\"\r\n    },\r\n    \"lodash-es\": {\r\n      \"version\": \"4.17.21\",\r\n      \"resolved\": \"https://registry.npmmirror.com/lodash-es/-/lodash-es-4.17.21.tgz\",\r\n      \"integrity\": \"sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==\"\r\n    },\r\n    \"lodash-unified\": {\r\n      \"version\": \"1.0.3\",\r\n      \"resolved\": \"https://registry.npmmirror.com/lodash-unified/-/lodash-unified-1.0.3.tgz\",\r\n      \"integrity\": \"sha512-WK9qSozxXOD7ZJQlpSqOT+om2ZfcT4yO+03FuzAHD0wF6S0l0090LRPDx3vhTTLZ8cFKpBn+IOcVXK6qOcIlfQ==\"\r\n    },\r\n    \"lodash.merge\": {\r\n      \"version\": \"4.6.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/lodash.merge/-/lodash.merge-4.6.2.tgz\",\r\n      \"integrity\": \"sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"lru-cache\": {\r\n      \"version\": \"6.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/lru-cache/-/lru-cache-6.0.0.tgz\",\r\n      \"integrity\": \"sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"yallist\": \"^4.0.0\"\r\n      }\r\n    },\r\n    \"magic-string\": {\r\n      \"version\": \"0.25.9\",\r\n      \"resolved\": \"https://registry.npmmirror.com/magic-string/-/magic-string-0.25.9.tgz\",\r\n      \"integrity\": \"sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==\",\r\n      \"requires\": {\r\n        \"sourcemap-codec\": \"^1.4.8\"\r\n      }\r\n    },\r\n    \"memoize-one\": {\r\n      \"version\": \"6.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/memoize-one/-/memoize-one-6.0.0.tgz\",\r\n      \"integrity\": \"sha512-rkpe71W0N0c0Xz6QD0eJETuWAJGnJ9afsl1srmwPrI+yBCkge5EycXXbYRyvL29zZVUWQCY7InPRCv3GDXuZNw==\"\r\n    },\r\n    \"mime-db\": {\r\n      \"version\": \"1.52.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/mime-db/-/mime-db-1.52.0.tgz\",\r\n      \"integrity\": \"sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==\"\r\n    },\r\n    \"mime-types\": {\r\n      \"version\": \"2.1.35\",\r\n      \"resolved\": \"https://registry.npmmirror.com/mime-types/-/mime-types-2.1.35.tgz\",\r\n      \"integrity\": \"sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==\",\r\n      \"requires\": {\r\n        \"mime-db\": \"1.52.0\"\r\n      }\r\n    },\r\n    \"minimatch\": {\r\n      \"version\": \"3.1.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/minimatch/-/minimatch-3.1.2.tgz\",\r\n      \"integrity\": \"sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"brace-expansion\": \"^1.1.7\"\r\n      }\r\n    },\r\n    \"ms\": {\r\n      \"version\": \"2.1.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/ms/-/ms-2.1.2.tgz\",\r\n      \"integrity\": \"sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==\",\r\n      \"dev\": true\r\n    },\r\n    \"nanoid\": {\r\n      \"version\": \"3.3.4\",\r\n      \"resolved\": \"https://registry.npmmirror.com/nanoid/-/nanoid-3.3.4.tgz\",\r\n      \"integrity\": \"sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==\"\r\n    },\r\n    \"natural-compare\": {\r\n      \"version\": \"1.4.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/natural-compare/-/natural-compare-1.4.0.tgz\",\r\n      \"integrity\": \"sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==\",\r\n      \"dev\": true\r\n    },\r\n    \"normalize-wheel-es\": {\r\n      \"version\": \"1.2.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/normalize-wheel-es/-/normalize-wheel-es-1.2.0.tgz\",\r\n      \"integrity\": \"sha512-Wj7+EJQ8mSuXr2iWfnujrimU35R2W4FAErEyTmJoJ7ucwTn2hOUSsRehMb5RSYkxXGTM7Y9QpvPmp++w5ftoJw==\"\r\n    },\r\n    \"nth-check\": {\r\n      \"version\": \"2.1.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/nth-check/-/nth-check-2.1.1.tgz\",\r\n      \"integrity\": \"sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"boolbase\": \"^1.0.0\"\r\n      }\r\n    },\r\n    \"once\": {\r\n      \"version\": \"1.4.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/once/-/once-1.4.0.tgz\",\r\n      \"integrity\": \"sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"wrappy\": \"1\"\r\n      }\r\n    },\r\n    \"optionator\": {\r\n      \"version\": \"0.9.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/optionator/-/optionator-0.9.1.tgz\",\r\n      \"integrity\": \"sha512-74RlY5FCnhq4jRxVUPKDaRwrVNXMqsGsiW6AJw4XK8hmtm10wC0ypZBLw5IIp85NZMr91+qd1RvvENwg7jjRFw==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"deep-is\": \"^0.1.3\",\r\n        \"fast-levenshtein\": \"^2.0.6\",\r\n        \"levn\": \"^0.4.1\",\r\n        \"prelude-ls\": \"^1.2.1\",\r\n        \"type-check\": \"^0.4.0\",\r\n        \"word-wrap\": \"^1.2.3\"\r\n      }\r\n    },\r\n    \"p-limit\": {\r\n      \"version\": \"3.1.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/p-limit/-/p-limit-3.1.0.tgz\",\r\n      \"integrity\": \"sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"yocto-queue\": \"^0.1.0\"\r\n      }\r\n    },\r\n    \"p-locate\": {\r\n      \"version\": \"5.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/p-locate/-/p-locate-5.0.0.tgz\",\r\n      \"integrity\": \"sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"p-limit\": \"^3.0.2\"\r\n      }\r\n    },\r\n    \"parent-module\": {\r\n      \"version\": \"1.0.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/parent-module/-/parent-module-1.0.1.tgz\",\r\n      \"integrity\": \"sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"callsites\": \"^3.0.0\"\r\n      }\r\n    },\r\n    \"path-exists\": {\r\n      \"version\": \"4.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/path-exists/-/path-exists-4.0.0.tgz\",\r\n      \"integrity\": \"sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==\",\r\n      \"dev\": true\r\n    },\r\n    \"path-is-absolute\": {\r\n      \"version\": \"1.0.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/path-is-absolute/-/path-is-absolute-1.0.1.tgz\",\r\n      \"integrity\": \"sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==\",\r\n      \"dev\": true\r\n    },\r\n    \"path-key\": {\r\n      \"version\": \"3.1.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/path-key/-/path-key-3.1.1.tgz\",\r\n      \"integrity\": \"sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==\",\r\n      \"dev\": true\r\n    },\r\n    \"path-parse\": {\r\n      \"version\": \"1.0.7\",\r\n      \"resolved\": \"https://registry.npmmirror.com/path-parse/-/path-parse-1.0.7.tgz\",\r\n      \"integrity\": \"sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==\",\r\n      \"dev\": true\r\n    },\r\n    \"picocolors\": {\r\n      \"version\": \"1.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/picocolors/-/picocolors-1.0.0.tgz\",\r\n      \"integrity\": \"sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==\"\r\n    },\r\n    \"postcss\": {\r\n      \"version\": \"8.4.21\",\r\n      \"resolved\": \"https://registry.npmmirror.com/postcss/-/postcss-8.4.21.tgz\",\r\n      \"integrity\": \"sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg==\",\r\n      \"requires\": {\r\n        \"nanoid\": \"^3.3.4\",\r\n        \"picocolors\": \"^1.0.0\",\r\n        \"source-map-js\": \"^1.0.2\"\r\n      }\r\n    },\r\n    \"postcss-selector-parser\": {\r\n      \"version\": \"6.0.11\",\r\n      \"resolved\": \"https://registry.npmmirror.com/postcss-selector-parser/-/postcss-selector-parser-6.0.11.tgz\",\r\n      \"integrity\": \"sha512-zbARubNdogI9j7WY4nQJBiNqQf3sLS3wCP4WfOidu+p28LofJqDH1tcXypGrcmMHhDk2t9wGhCsYe/+szLTy1g==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"cssesc\": \"^3.0.0\",\r\n        \"util-deprecate\": \"^1.0.2\"\r\n      }\r\n    },\r\n    \"prelude-ls\": {\r\n      \"version\": \"1.2.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/prelude-ls/-/prelude-ls-1.2.1.tgz\",\r\n      \"integrity\": \"sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==\",\r\n      \"dev\": true\r\n    },\r\n    \"proxy-from-env\": {\r\n      \"version\": \"1.1.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz\",\r\n      \"integrity\": \"sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==\"\r\n    },\r\n    \"punycode\": {\r\n      \"version\": \"2.3.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/punycode/-/punycode-2.3.0.tgz\",\r\n      \"integrity\": \"sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==\",\r\n      \"dev\": true\r\n    },\r\n    \"queue-microtask\": {\r\n      \"version\": \"1.2.3\",\r\n      \"resolved\": \"https://registry.npmmirror.com/queue-microtask/-/queue-microtask-1.2.3.tgz\",\r\n      \"integrity\": \"sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==\",\r\n      \"dev\": true\r\n    },\r\n    \"regexpp\": {\r\n      \"version\": \"3.2.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/regexpp/-/regexpp-3.2.0.tgz\",\r\n      \"integrity\": \"sha512-pq2bWo9mVD43nbts2wGv17XLiNLya+GklZ8kaDLV2Z08gDCsGpnKn9BFMepvWuHCbyVvY7J5o5+BVvoQbmlJLg==\",\r\n      \"dev\": true\r\n    },\r\n    \"resolve\": {\r\n      \"version\": \"1.22.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/resolve/-/resolve-1.22.1.tgz\",\r\n      \"integrity\": \"sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"is-core-module\": \"^2.9.0\",\r\n        \"path-parse\": \"^1.0.7\",\r\n        \"supports-preserve-symlinks-flag\": \"^1.0.0\"\r\n      }\r\n    },\r\n    \"resolve-from\": {\r\n      \"version\": \"4.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/resolve-from/-/resolve-from-4.0.0.tgz\",\r\n      \"integrity\": \"sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==\",\r\n      \"dev\": true\r\n    },\r\n    \"reusify\": {\r\n      \"version\": \"1.0.4\",\r\n      \"resolved\": \"https://registry.npmmirror.com/reusify/-/reusify-1.0.4.tgz\",\r\n      \"integrity\": \"sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==\",\r\n      \"dev\": true\r\n    },\r\n    \"rimraf\": {\r\n      \"version\": \"3.0.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/rimraf/-/rimraf-3.0.2.tgz\",\r\n      \"integrity\": \"sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"glob\": \"^7.1.3\"\r\n      }\r\n    },\r\n    \"rollup\": {\r\n      \"version\": \"3.14.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/rollup/-/rollup-3.14.0.tgz\",\r\n      \"integrity\": \"sha512-o23sdgCLcLSe3zIplT9nQ1+r97okuaiR+vmAPZPTDYB7/f3tgWIYNyiQveMsZwshBT0is4eGax/HH83Q7CG+/Q==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"fsevents\": \"~2.3.2\"\r\n      }\r\n    },\r\n    \"run-parallel\": {\r\n      \"version\": \"1.2.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/run-parallel/-/run-parallel-1.2.0.tgz\",\r\n      \"integrity\": \"sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"queue-microtask\": \"^1.2.2\"\r\n      }\r\n    },\r\n    \"semver\": {\r\n      \"version\": \"7.3.8\",\r\n      \"resolved\": \"https://registry.npmmirror.com/semver/-/semver-7.3.8.tgz\",\r\n      \"integrity\": \"sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"lru-cache\": \"^6.0.0\"\r\n      }\r\n    },\r\n    \"shebang-command\": {\r\n      \"version\": \"2.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/shebang-command/-/shebang-command-2.0.0.tgz\",\r\n      \"integrity\": \"sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"shebang-regex\": \"^3.0.0\"\r\n      }\r\n    },\r\n    \"shebang-regex\": {\r\n      \"version\": \"3.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/shebang-regex/-/shebang-regex-3.0.0.tgz\",\r\n      \"integrity\": \"sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==\",\r\n      \"dev\": true\r\n    },\r\n    \"source-map\": {\r\n      \"version\": \"0.6.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/source-map/-/source-map-0.6.1.tgz\",\r\n      \"integrity\": \"sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==\"\r\n    },\r\n    \"source-map-js\": {\r\n      \"version\": \"1.0.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/source-map-js/-/source-map-js-1.0.2.tgz\",\r\n      \"integrity\": \"sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==\"\r\n    },\r\n    \"sourcemap-codec\": {\r\n      \"version\": \"1.4.8\",\r\n      \"resolved\": \"https://registry.npmmirror.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz\",\r\n      \"integrity\": \"sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==\"\r\n    },\r\n    \"strip-ansi\": {\r\n      \"version\": \"6.0.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/strip-ansi/-/strip-ansi-6.0.1.tgz\",\r\n      \"integrity\": \"sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"ansi-regex\": \"^5.0.1\"\r\n      }\r\n    },\r\n    \"strip-json-comments\": {\r\n      \"version\": \"3.1.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz\",\r\n      \"integrity\": \"sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==\",\r\n      \"dev\": true\r\n    },\r\n    \"supports-color\": {\r\n      \"version\": \"7.2.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/supports-color/-/supports-color-7.2.0.tgz\",\r\n      \"integrity\": \"sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"has-flag\": \"^4.0.0\"\r\n      }\r\n    },\r\n    \"supports-preserve-symlinks-flag\": {\r\n      \"version\": \"1.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz\",\r\n      \"integrity\": \"sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==\",\r\n      \"dev\": true\r\n    },\r\n    \"text-table\": {\r\n      \"version\": \"0.2.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/text-table/-/text-table-0.2.0.tgz\",\r\n      \"integrity\": \"sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==\",\r\n      \"dev\": true\r\n    },\r\n    \"type-check\": {\r\n      \"version\": \"0.4.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/type-check/-/type-check-0.4.0.tgz\",\r\n      \"integrity\": \"sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"prelude-ls\": \"^1.2.1\"\r\n      }\r\n    },\r\n    \"type-fest\": {\r\n      \"version\": \"0.20.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/type-fest/-/type-fest-0.20.2.tgz\",\r\n      \"integrity\": \"sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"uri-js\": {\r\n      \"version\": \"4.4.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/uri-js/-/uri-js-4.4.1.tgz\",\r\n      \"integrity\": \"sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"punycode\": \"^2.1.0\"\r\n      }\r\n    },\r\n    \"util-deprecate\": {\r\n      \"version\": \"1.0.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/util-deprecate/-/util-deprecate-1.0.2.tgz\",\r\n      \"integrity\": \"sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==\",\r\n      \"dev\": true\r\n    },\r\n    \"vite\": {\r\n      \"version\": \"4.1.1\",\r\n      \"resolved\": \"https://registry.npmmirror.com/vite/-/vite-4.1.1.tgz\",\r\n      \"integrity\": \"sha512-LM9WWea8vsxhr782r9ntg+bhSFS06FJgCvvB0+8hf8UWtvaiDagKYWXndjfX6kGl74keHJUcpzrQliDXZlF5yg==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"esbuild\": \"^0.16.14\",\r\n        \"fsevents\": \"~2.3.2\",\r\n        \"postcss\": \"^8.4.21\",\r\n        \"resolve\": \"^1.22.1\",\r\n        \"rollup\": \"^3.10.0\"\r\n      }\r\n    },\r\n    \"vue\": {\r\n      \"version\": \"3.2.47\",\r\n      \"resolved\": \"https://registry.npmmirror.com/vue/-/vue-3.2.47.tgz\",\r\n      \"integrity\": \"sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ==\",\r\n      \"requires\": {\r\n        \"@vue/compiler-dom\": \"3.2.47\",\r\n        \"@vue/compiler-sfc\": \"3.2.47\",\r\n        \"@vue/runtime-dom\": \"3.2.47\",\r\n        \"@vue/server-renderer\": \"3.2.47\",\r\n        \"@vue/shared\": \"3.2.47\"\r\n      }\r\n    },\r\n    \"vue-demi\": {\r\n      \"version\": \"0.13.11\",\r\n      \"resolved\": \"https://registry.npmmirror.com/vue-demi/-/vue-demi-0.13.11.tgz\",\r\n      \"integrity\": \"sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==\"\r\n    },\r\n    \"vue-eslint-parser\": {\r\n      \"version\": \"9.1.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/vue-eslint-parser/-/vue-eslint-parser-9.1.0.tgz\",\r\n      \"integrity\": \"sha512-NGn/iQy8/Wb7RrRa4aRkokyCZfOUWk19OP5HP6JEozQFX5AoS/t+Z0ZN7FY4LlmWc4FNI922V7cvX28zctN8dQ==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"debug\": \"^4.3.4\",\r\n        \"eslint-scope\": \"^7.1.1\",\r\n        \"eslint-visitor-keys\": \"^3.3.0\",\r\n        \"espree\": \"^9.3.1\",\r\n        \"esquery\": \"^1.4.0\",\r\n        \"lodash\": \"^4.17.21\",\r\n        \"semver\": \"^7.3.6\"\r\n      }\r\n    },\r\n    \"vue-router\": {\r\n      \"version\": \"4.1.6\",\r\n      \"resolved\": \"https://registry.npmmirror.com/vue-router/-/vue-router-4.1.6.tgz\",\r\n      \"integrity\": \"sha512-DYWYwsG6xNPmLq/FmZn8Ip+qrhFEzA14EI12MsMgVxvHFDYvlr4NXpVF5hrRH1wVcDP8fGi5F4rxuJSl8/r+EQ==\",\r\n      \"requires\": {\r\n        \"@vue/devtools-api\": \"^6.4.5\"\r\n      }\r\n    },\r\n    \"vue3-menus\": {\r\n      \"version\": \"1.1.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/vue3-menus/-/vue3-menus-1.1.2.tgz\",\r\n      \"integrity\": \"sha512-MoX87TH25fbKmmE8PwC+c2kJOSGJheP4pBR2we0RkOrfUDQg7sK+akAZSmQU8o+7dF+xVF2NfKPhoVHOhlX9wQ==\"\r\n    },\r\n    \"which\": {\r\n      \"version\": \"2.0.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/which/-/which-2.0.2.tgz\",\r\n      \"integrity\": \"sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==\",\r\n      \"dev\": true,\r\n      \"requires\": {\r\n        \"isexe\": \"^2.0.0\"\r\n      }\r\n    },\r\n    \"word-wrap\": {\r\n      \"version\": \"1.2.3\",\r\n      \"resolved\": \"https://registry.npmmirror.com/word-wrap/-/word-wrap-1.2.3.tgz\",\r\n      \"integrity\": \"sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"wrappy\": {\r\n      \"version\": \"1.0.2\",\r\n      \"resolved\": \"https://registry.npmmirror.com/wrappy/-/wrappy-1.0.2.tgz\",\r\n      \"integrity\": \"sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==\",\r\n      \"dev\": true\r\n    },\r\n    \"xml-name-validator\": {\r\n      \"version\": \"4.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/xml-name-validator/-/xml-name-validator-4.0.0.tgz\",\r\n      \"integrity\": \"sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==\",\r\n      \"dev\": true\r\n    },\r\n    \"yallist\": {\r\n      \"version\": \"4.0.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/yallist/-/yallist-4.0.0.tgz\",\r\n      \"integrity\": \"sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==\",\r\n      \"dev\": true\r\n    },\r\n    \"yocto-queue\": {\r\n      \"version\": \"0.1.0\",\r\n      \"resolved\": \"https://registry.npmmirror.com/yocto-queue/-/yocto-queue-0.1.0.tgz\",\r\n      \"integrity\": \"sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==\",\r\n      \"dev\": true\r\n    }\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ui/windows-card-manage-ui/package-lock.json b/ui/windows-card-manage-ui/package-lock.json
+--- a/ui/windows-card-manage-ui/package-lock.json	(revision adeaab16c964cbbd817e9d4165c8928b4cc33243)
++++ b/ui/windows-card-manage-ui/package-lock.json	(date 1676771608239)
+@@ -252,6 +252,11 @@
+         "fastq": "^1.6.0"
+       }
+     },
++    "@popperjs/core": {
++      "version": "npm:@sxzz/popperjs-es@2.11.7",
++      "resolved": "https://registry.npmjs.org/@sxzz/popperjs-es/-/popperjs-es-2.11.7.tgz",
++      "integrity": "sha512-Ccy0NlLkzr0Ex2FKvh2X+OyERHXJ88XJ1MXtsI9y9fGexlaXaVTPzBCRBwIxFkORuOb+uBqeu+RqnpgYTEZRUQ=="
++    },
+     "@types/lodash": {
+       "version": "4.14.191",
+       "resolved": "https://registry.npmmirror.com/@types/lodash/-/lodash-4.14.191.tgz",
+@@ -612,13 +617,6 @@
+         "lodash-unified": "^1.0.2",
+         "memoize-one": "^6.0.0",
+         "normalize-wheel-es": "^1.2.0"
+-      },
+-      "dependencies": {
+-        "@popperjs/core": {
+-          "version": "npm:@sxzz/popperjs-es@2.11.7",
+-          "resolved": "https://registry.npmjs.org/@sxzz/popperjs-es/-/popperjs-es-2.11.7.tgz",
+-          "integrity": "sha512-Ccy0NlLkzr0Ex2FKvh2X+OyERHXJ88XJ1MXtsI9y9fGexlaXaVTPzBCRBwIxFkORuOb+uBqeu+RqnpgYTEZRUQ=="
+-        }
+       }
+     },
+     "esbuild": {
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># about run java project,please read 1 and 2 tips\r\n# 1.about Java\r\n# the project uses IntelliJ IDEA development\r\n## please use Intellij IDEA to open or import\r\n\r\n### The technologies used in this project include: \r\n#### Java: springboot, mybatis-plus, MySQL, fastjson\r\n#### UI: vue3, vite, element-ui-plus, aixos\r\n\r\n### This project is the back-end program of windows-card-manage-ui\r\n\r\n# 2.about sql\r\n## download and install Mysql and setting user is root  and password is 1234 and port 3306\r\n## create database windows_card_manage and setting database charset=utf8\r\n## import project catalog root sql catalog under windows_card_manage.sql\r\n## about import sql please google search method\r\n\r\n# about Java Project run\r\n# please  run flashcards-JunheZoooo/src/main/java/com.example.windowscardmanage/WindowsCardManageApplication.java\r\n# 【important tips:please loaded all maven dependencies until flashcards-JunheZoooo/pom.xml does not have any error】\r\n\r\n# 3.about ui\r\n## how to run project's ui\r\n### cd project ui catalog\r\n\r\n### use Intellij Webstorm open or import the windows-card-manage-ui\r\n\r\n# windows-card-manage-ui\r\n\r\nThis template should help get you started developing with Vue 3 in Vite.\r\n\r\n## Recommended IDE Setup\r\n\r\n[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).\r\n\r\n## Customize configuration\r\n\r\nSee [Vite Configuration Reference](https://vitejs.dev/config/).\r\n\r\n## Project Setup\r\n\r\n```sh\r\nnpm install\r\n```\r\n\r\n### Compile and Hot-Reload for Development\r\n\r\n```sh\r\nnpm run dev\r\n```\r\n\r\n### Compile and Minify for Production\r\n\r\n```sh\r\nnpm run build\r\n```\r\n\r\n### Lint with [ESLint](https://eslint.org/)\r\n\r\n```sh\r\nnpm run lint\r\n```\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision adeaab16c964cbbd817e9d4165c8928b4cc33243)
++++ b/README.md	(date 1676769112980)
+@@ -60,3 +60,7 @@
+ ```sh
+ npm run lint
+ ```
++
++
++
++##
+\ No newline at end of file
+Index: src/main/java/com/example/windowscardmanage/entity/Card.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.windowscardmanage.entity;\r\n\r\nimport com.baomidou.mybatisplus.annotation.IdType;\r\nimport com.baomidou.mybatisplus.annotation.TableId;\r\nimport com.baomidou.mybatisplus.annotation.TableName;\r\nimport com.fasterxml.jackson.annotation.JsonFormat;\r\nimport lombok.AllArgsConstructor;\r\nimport lombok.Data;\r\nimport lombok.NoArgsConstructor;\r\n\r\nimport java.util.Date;\r\n\r\n/**\r\n * card\r\n */\r\n@TableName(value =\"card\")\r\n@Data\r\n@AllArgsConstructor\r\n@NoArgsConstructor\r\npublic class Card {\r\n    /** card id */\r\n    @TableId(type = IdType.AUTO)\r\n    private Integer id;\r\n\r\n    /** card create user id */\r\n    private Integer userId;\r\n\r\n    /** card type：1.card package，2.card */\r\n    private Integer cardType;\r\n\r\n    /** card name */\r\n    private String name;\r\n\r\n    /** card ascription switch：0.no ascription，1.ascription：desktop no show */\r\n    private Integer cardOfIs;\r\n\r\n    /** when it is a card：ascription card package id */\r\n    private Integer cardOfId;\r\n\r\n    /** when it is a card：card content */\r\n    private String content;\r\n\r\n    /** create time */\r\n    @JsonFormat(pattern = \"yyyy-MM-dd HH:mm:ss\")\r\n    private Date createTime;\r\n\r\n    /** update time */\r\n    @JsonFormat(pattern = \"yyyy-MM-dd HH:mm:ss\")\r\n    private Date updateTime;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/windowscardmanage/entity/Card.java b/src/main/java/com/example/windowscardmanage/entity/Card.java
+--- a/src/main/java/com/example/windowscardmanage/entity/Card.java	(revision adeaab16c964cbbd817e9d4165c8928b4cc33243)
++++ b/src/main/java/com/example/windowscardmanage/entity/Card.java	(date 1676771448373)
+@@ -40,6 +40,9 @@
+     /** when it is a card：card content */
+     private String content;
+ 
++    /** setting card color style: 0.default 1.red 2.orange 3.yellow 4.green 5.blue */
++    private Integer colorStyle;
++
+     /** create time */
+     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+     private Date createTime;
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"aeb78e6f-3dc2-4ffb-b7f6-e78cac5c3916\" name=\"变更\" comment=\"1.delete on file\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2LJttQp9lKEl10lbhTnZDkxFzL1\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RequestMappingsPanelOrder0\" value=\"0\" />\r\n    <property name=\"RequestMappingsPanelOrder1\" value=\"1\" />\r\n    <property name=\"RequestMappingsPanelWidth0\" value=\"75\" />\r\n    <property name=\"RequestMappingsPanelWidth1\" value=\"75\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"project.propVCSSupport.DirectoryMappings\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\windows-card-manage\\windows-card-manage\\ui\" />\r\n      <recent name=\"E:\\date-project\\2.1\\windows-card-manage\\ui\" />\r\n      <recent name=\"E:\\date-project\\2.1\\windows-card-manage\\sql\" />\r\n      <recent name=\"E:\\date-project\\2.1\\windows-card-manage\\src\\main\\java\\com\\example\\windowscardmanage\" />\r\n      <recent name=\"E:\\date-project\\2.1\\windows-card-manage\\src\\main\\resources\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"com.example.windowscardmanage.service.impl\" />\r\n      <recent name=\"com.example.windowscardmanage.service\" />\r\n      <recent name=\"com.example.windowscardmanage.mapper\" />\r\n      <recent name=\"com.example.windowscardmanage.entity\" />\r\n      <recent name=\"com.example.windowscardmanage.controller\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"WindowsCardManageApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"windows-card-manage\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.example.windowscardmanage.WindowsCardManageApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"应用程序级\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"默认任务\">\r\n      <changelist id=\"aeb78e6f-3dc2-4ffb-b7f6-e78cac5c3916\" name=\"变更\" comment=\"\" />\r\n      <created>1675601230316</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1675601230316</updated>\r\n      <workItem from=\"1675601234313\" duration=\"1548000\" />\r\n      <workItem from=\"1675689710919\" duration=\"746000\" />\r\n      <workItem from=\"1675690852525\" duration=\"84000\" />\r\n      <workItem from=\"1675691008165\" duration=\"2236000\" />\r\n      <workItem from=\"1675945970742\" duration=\"598000\" />\r\n      <workItem from=\"1676565282320\" duration=\"4880000\" />\r\n      <workItem from=\"1676649267439\" duration=\"178000\" />\r\n      <workItem from=\"1676674002691\" duration=\"17311000\" />\r\n      <workItem from=\"1676724099315\" duration=\"2940000\" />\r\n      <workItem from=\"1676728146947\" duration=\"1299000\" />\r\n      <workItem from=\"1676730309744\" duration=\"213000\" />\r\n      <workItem from=\"1676730549770\" duration=\"345000\" />\r\n      <workItem from=\"1676731170554\" duration=\"582000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"1.this is the first try push\">\r\n      <created>1676728410455</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1676728410455</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"1.delete on file\">\r\n      <created>1676729371418</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1676729371418</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/master\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <ignored-roots>\r\n      <path value=\"$PROJECT_DIR$\" />\r\n    </ignored-roots>\r\n    <MESSAGE value=\"1.this is the first try push\" />\r\n    <MESSAGE value=\"1.delete on file\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"1.delete on file\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision adeaab16c964cbbd817e9d4165c8928b4cc33243)
++++ b/.idea/workspace.xml	(date 1676776606117)
+@@ -4,7 +4,17 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="aeb78e6f-3dc2-4ffb-b7f6-e78cac5c3916" name="变更" comment="1.delete on file" />
++    <list default="true" id="aeb78e6f-3dc2-4ffb-b7f6-e78cac5c3916" name="变更" comment="1.update readme.md">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/sql/windows_card_manage.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/windows_card_manage.sql" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/windowscardmanage/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/windowscardmanage/config/CorsConfig.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/windowscardmanage/entity/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/windowscardmanage/entity/Card.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/example/windowscardmanage/entity/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/windowscardmanage/entity/Card.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ui/windows-card-manage-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/windows-card-manage-ui/package-lock.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ui/windows-card-manage-ui/src/assets/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/windows-card-manage-ui/src/assets/public.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ui/windows-card-manage-ui/src/views/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/ui/windows-card-manage-ui/src/views/index.vue" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -47,6 +57,7 @@
+     <property name="node.js.detected.package.tslint" value="true" />
+     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+     <property name="node.js.selected.package.tslint" value="(autodetect)" />
++    <property name="nodejs_package_manager_path" value="npm" />
+     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+   </component>
+   <component name="RecentsManager">
+@@ -94,7 +105,7 @@
+       <workItem from="1676728146947" duration="1299000" />
+       <workItem from="1676730309744" duration="213000" />
+       <workItem from="1676730549770" duration="345000" />
+-      <workItem from="1676731170554" duration="582000" />
++      <workItem from="1676731170554" duration="6234000" />
+     </task>
+     <task id="LOCAL-00001" summary="1.this is the first try push">
+       <created>1676728410455</created>
+@@ -110,7 +121,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1676729371418</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="1.update readme.md">
++      <created>1676733373263</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1676733373263</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -145,6 +163,7 @@
+     </ignored-roots>
+     <MESSAGE value="1.this is the first try push" />
+     <MESSAGE value="1.delete on file" />
+-    <option name="LAST_COMMIT_MESSAGE" value="1.delete on file" />
++    <MESSAGE value="1.update readme.md" />
++    <option name="LAST_COMMIT_MESSAGE" value="1.update readme.md" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: ui/windows-card-manage-ui/src/views/index.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><template>\r\n  <!-- 桌面首页 -->\r\n  <!-- 最外层 -->\r\n  <div style=\"text-align: center;\" :style=\"{backgroundImage: 'url('+ bgImageUrl +')'}\" class=\"v-h-100 v-flex v-flex-flow\">\r\n    <!-- 头部标签 -->\r\n    <div class=\"nav-header v-flex\" style=\"height: 7vh\">\r\n      <div class=\"v-flex-1 v-flex v-flex-aic p-l-40\">\r\n        <div class=\"cursor-p\">\r\n          <el-popover placement=\"right-end\" :width=\"50\" trigger=\"click\">\r\n            <template #reference>\r\n              <i class=\"iconfont icon-tianjia color-white font-size-20-plus\"></i>\r\n            </template>\r\n            <div class=\"v-flex v-flex-aic v-flex-jus-cent v-flex-flow\">\r\n              <div class=\"p-b-10\">\r\n                <el-button type=\"primary\" @click=\"createFolderBtn\">create DESKS</el-button>\r\n              </div>\r\n              <div>\r\n                <el-button @click=\"createFileBtn\">create card</el-button>\r\n              </div>\r\n            </div>\r\n          </el-popover>\r\n        </div>\r\n      </div>\r\n      <div v-if=\"isLogin==='NOT'\" class=\"font-size-20 text-r p-t-10 p-b-10 p-l-30 p-r-30 v-flex-1\">\r\n        <el-link href=\"/register\" type=\"primary\" class=\"m-r-10 color-white\">register</el-link>\r\n        <el-link href=\"/login\" type=\"primary\" class=\"m-l-10 color-white\">login</el-link>\r\n      </div>\r\n      <div v-else class=\"font-size-20 text-r p-t-10 p-b-10 p-l-30 p-r-30 v-flex-1\">\r\n        <el-link @click=\"btnExit\" type=\"primary\" class=\"m-r-10 color-white\">quit</el-link>\r\n      </div>\r\n    </div>\r\n    <div class=\"nav-bottom-content p-l-20 p-r-20\" style=\"height: 93vh\">\r\n      <div class=\"h-100\">\r\n        <div v-for=\"(item,i) in list\" :key=\"i\">\r\n          <!-- 文件夹 -->\r\n          <div v-if=\"item.cardType === 1\" class=\"float-left m-r-10 cursor-d windows-icon\" @contextmenu.prevent=\"clickRight(item,$event)\">\r\n            <!-- 文件夹图标 -->\r\n            <div>\r\n              <i class=\"iconfont icon-kapian1 folder-color font-size-40-plus\"></i>\r\n            </div>\r\n            <!-- 文件夹名称 -->\r\n            <div class=\"font-size-12\">\r\n              <span class=\"color-white\">{{item.name}}</span>\r\n            </div>\r\n          </div>\r\n          <!-- 普通文件 -->\r\n          <div v-if=\"item.cardType === 2\" class=\"float-left m-l-10 cursor-d windows-icon\" @contextmenu=\"fileClickRight(item,$event)\">\r\n            <!-- 文件夹图标 -->\r\n            <div>\r\n              <i class=\"iconfont icon-kapian color-white font-size-40-plus\"></i>\r\n            </div>\r\n            <!-- 文件夹名称 -->\r\n            <div class=\"font-size-12\">\r\n              <span class=\"color-white\">{{item.name}}</span>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <!-- 文件夹上右键的弹框内容 -->\r\n    <vue3-menus :open=\"isOpen\" :event=\"eventVal\" :menus=\"menus.menus\">\r\n      <template #label=\"{ menu }\">{{ menu.label }}</template>\r\n    </vue3-menus>\r\n    <!-- 文件上右键的弹框内容 -->\r\n    <vue3-menus :open=\"isFileOpen\" :event=\"fileEventVal\" :menus=\"fileMenus.menus\">\r\n      <template #label=\"{ menu }\">{{ menu.label }}</template>\r\n    </vue3-menus>\r\n    <!-- 在 card pakage dialog 中文件上右键的弹框内容 -->\r\n    <vue3-menus :open=\"isDialogFileOpen\" :event=\"dialogFileEventVal\" :menus=\"dialogFileMenus.menus\" :z-index=\"9999\">\r\n      <template #label=\"{ menu }\">{{ menu.label }}</template>\r\n    </vue3-menus>\r\n    <!-- 创建卡包弹框 -->\r\n    <el-dialog v-model=\"openCreateFolder\" width=\"30%\" title=\"create card DESKS\" :before-close=\"closeCreateFolder\">\r\n      <el-form>\r\n        <el-form-item label=\"DESKS name：\">\r\n          <el-input v-model=\"packageForm.name\" ref='packageName' placeholder=\"please input DESKS name\" />\r\n        </el-form-item>\r\n      </el-form>\r\n      <template #footer>\r\n        <span class=\"dialog-footer\">\r\n          <el-button @click=\"closeCreateFolder\">cancel</el-button>\r\n          <el-button type=\"primary\" @click=\"createCardPackageBtn\">yes</el-button>\r\n        </span>\r\n      </template>\r\n    </el-dialog>\r\n    <!-- 打开卡包弹框 -->\r\n    <el-dialog v-model=\"openFolder\" width=\"60%\" title=\"open card package\">\r\n      <div style=\"min-height: 100px;\">\r\n        <div v-for=\"(item,i) in packageCardList\" :key=\"i\">\r\n          <!-- 普通文件 -->\r\n          <div v-if=\"item.cardType === 2\" class=\"float-left m-l-10 cursor-d windows-icon-dialog\" @contextmenu=\"fileDialogClickRight(item,$event)\">\r\n            <!-- 文件夹图标 -->\r\n            <div>\r\n              <i class=\"iconfont icon-24gl-fileText color-white font-size-35-plus\"></i>\r\n            </div>\r\n            <!-- 文件夹名称 -->\r\n            <div class=\"font-size-12\">\r\n              <span class=\"color-white\">{{item.name}}</span>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </el-dialog>\r\n    <!-- 创建卡片弹框 -->\r\n    <el-dialog v-model=\"openCreateFile\" width=\"30%\" title=\"create card\" :before-close=\"closeCreateFile\">\r\n      <el-form>\r\n        <el-form-item label=\"card name：\">\r\n          <el-input v-model=\"cardForm.name\" ref='cardName' placeholder=\"please input card name\" />\r\n        </el-form-item>\r\n        <el-form-item label=\"card content：\">\r\n          <el-input v-model=\"cardForm.content\" ref='cardContent' type=\"textarea\" :rows=\"10\" placeholder=\"please input card content\" />\r\n        </el-form-item>\r\n      </el-form>\r\n      <template #footer>\r\n        <span class=\"dialog-footer\">\r\n          <el-button @click=\"closeCreateFile\">cancel</el-button>\r\n          <el-button type=\"primary\" @click=\"createCardBtn\">yes</el-button>\r\n        </span>\r\n      </template>\r\n    </el-dialog>\r\n    <!-- 重看卡片弹框 -->\r\n    <el-dialog v-model=\"openSelectFile\" width=\"30%\" title=\"see card\">\r\n      <el-form>\r\n        <el-form-item label=\"card name：\">\r\n          <div class=\"font-size-20 font-size-bold\">\r\n            <span>{{selectCardForm.name}}</span>\r\n          </div>\r\n        </el-form-item>\r\n        <el-form-item label=\"card content：\">\r\n          <div class=\"font-size-15\">\r\n            <span>{{selectCardForm.content}}</span>\r\n          </div>\r\n        </el-form-item>\r\n      </el-form>\r\n      <template #footer>\r\n        <span class=\"dialog-footer\">\r\n          <el-button @click=\"openSelectFile=false\">close</el-button>\r\n        </span>\r\n      </template>\r\n    </el-dialog>\r\n    <!-- 移动卡片弹框 -->\r\n    <el-dialog v-model=\"openMoveFile\" width=\"30%\" title=\"move card\" :before-close=\"closeMoveFile\">\r\n      <el-form>\r\n        <el-form-item label=\"card package\">\r\n          <el-select v-model=\"cardMoveForm.cardOfId\" ref=\"cardMove\" placeholder=\"please select card package\">\r\n            <el-option v-for=\"(item, index) in selectPackageOption\" :key=\"index\" :label=\"item.name\" :value=\"item.id\"/>\r\n          </el-select>\r\n        </el-form-item>\r\n      </el-form>\r\n      <template #footer>\r\n        <span class=\"dialog-footer\">\r\n          <el-button @click=\"closeMoveFile\">cancel</el-button>\r\n          <el-button type=\"primary\" @click=\"moveCardBtn\">yes</el-button>\r\n        </span>\r\n      </template>\r\n    </el-dialog>\r\n  </div>\r\n</template>\r\n\r\n<script>\r\nimport bgTwo from \"@/assets/img/bg-two.jpg\";\r\nimport {nextTick} from \"vue\";\r\nimport {cardList, packageList, cardSave, delCard, getCard,packageCardList} from \"@/api/HomeIndex\"\r\nimport {getUserData} from \"@/api/user\"\r\nimport store from '@/store/store'\r\nimport {useRouter} from 'vue-router'\r\nexport default {\r\n  name: \"HomeIndex\",\r\n  setup() {\r\n    // router function\r\n    const router = useRouter()\r\n    function routerPath(to,query) {\r\n      if (query) {\r\n        router.push({\r\n          path: to,\r\n          query: query\r\n        })\r\n      } else {\r\n        router.push({\r\n          path: to\r\n        })\r\n      }\r\n    }\r\n    return {\r\n      routerPath\r\n    }\r\n  },\r\n  data() {\r\n    return {\r\n      bgImageUrl: bgTwo,\r\n      // 文件开关\r\n      isFileOpen: false,\r\n      // file event\r\n      fileEventVal: {},\r\n      // file data\r\n      fileDataVal: {},\r\n      // file menus\r\n      fileMenus: {\r\n        menus: [\r\n          {\r\n            label: \"update\",\r\n            click: () => {\r\n              // get card data\r\n              let body = {\r\n                id: this.fileDataVal.id\r\n              }\r\n              getCard(body).then(res => {\r\n                if (res.data.code === 200) {\r\n                  this.cardForm = res.data.data.card\r\n                  this.openCreateFile = true\r\n                }\r\n              })\r\n            }\r\n          },\r\n          {\r\n            label: \"delete\",\r\n            style: {\r\n              color: \"red\"\r\n            },\r\n            click: () => {\r\n              let body = {\r\n                id: this.fileDataVal.id\r\n              }\r\n              delCard(body).then(res => {\r\n                if (res.data.code === 200) {\r\n                  this.msgSuccess(res.data.message)\r\n                  this.getCardList()\r\n                } else {\r\n                  this.msgError(res.data.message)\r\n                }\r\n              })\r\n            }\r\n          },\r\n          {\r\n            label: \"see\",\r\n            click: () => {\r\n              // get card data\r\n              let body = {\r\n                id: this.fileDataVal.id\r\n              }\r\n              getCard(body).then(res => {\r\n                if (res.data.code === 200) {\r\n                  this.selectCardForm = res.data.data.card\r\n                  this.openSelectFile = true\r\n                }\r\n              })\r\n            }\r\n          },\r\n          {\r\n            label: \"move\",\r\n            click: () => {\r\n              // get card data\r\n              let body = {\r\n                id: this.fileDataVal.id\r\n              }\r\n              getCard(body).then(res => {\r\n                if (res.data.code === 200) {\r\n                  this.cardMoveForm = res.data.data.card\r\n                  this.cardMoveForm.cardOfIs = 1\r\n                  this.cardMoveForm.cardOfId = \"\"\r\n                  this.openMoveFile = true\r\n                  this.getCardPackageList()\r\n                }\r\n              })\r\n            }\r\n          },\r\n        ]\r\n      },\r\n      // 文件 dialog 开关\r\n      isDialogFileOpen: false,\r\n      // file event\r\n      dialogFileEventVal: {},\r\n      // file data\r\n      dialogFileDataVal: {},\r\n      // file menus\r\n      dialogFileMenus: {\r\n        menus: [\r\n          {\r\n            label: \"update\",\r\n            click: () => {\r\n              // get card data\r\n              let body = {\r\n                id: this.dialogFileDataVal.id\r\n              }\r\n              getCard(body).then(res => {\r\n                if (res.data.code === 200) {\r\n                  this.cardForm = res.data.data.card\r\n                  this.openCreateFile = true\r\n                }\r\n              })\r\n            }\r\n          },\r\n          {\r\n            label: \"delete\",\r\n            style: {\r\n              color: \"red\"\r\n            },\r\n            click: () => {\r\n              let body = {\r\n                id: this.dialogFileDataVal.id\r\n              }\r\n              delCard(body).then(res => {\r\n                if (res.data.code === 200) {\r\n                  this.msgSuccess(res.data.message)\r\n                  this.getPackageCardList(this.eventData.id)\r\n                } else {\r\n                  this.msgError(res.data.message)\r\n                }\r\n              })\r\n            }\r\n          },\r\n          {\r\n            label: \"see\",\r\n            click: () => {\r\n              // get card data\r\n              let body = {\r\n                id: this.dialogFileDataVal.id\r\n              }\r\n              getCard(body).then(res => {\r\n                if (res.data.code === 200) {\r\n                  this.selectCardForm = res.data.data.card\r\n                  this.openSelectFile = true\r\n                }\r\n              })\r\n            }\r\n          }\r\n        ]\r\n      },\r\n      // 文件夹相关\r\n      isOpen: false,\r\n      // package event\r\n      eventVal: {},\r\n      // package event data\r\n      eventData: {},\r\n      // package menus\r\n      menus: {\r\n        menus: [\r\n          {\r\n            label: \"rename\",\r\n            click: () => {\r\n              // get card package data\r\n              let body = {\r\n                id: this.eventData.id\r\n              }\r\n              getCard(body).then(res => {\r\n                if (res.data.code === 200) {\r\n                  this.packageForm = res.data.data.card\r\n                  this.openCreateFolder = true\r\n                }\r\n              })\r\n            }\r\n          },\r\n          {\r\n            label: \"open\",\r\n            click: () => {\r\n              this.getPackageCardList(this.eventData.id)\r\n              this.openFolder = true\r\n            }\r\n          },\r\n          {\r\n            label: \"delete\",\r\n            style: {\r\n              color: \"red\"\r\n            },\r\n            click: () => {\r\n              let body = {\r\n                id: this.eventData.id\r\n              }\r\n              delCard(body).then(res => {\r\n                if (res.data.code === 200) {\r\n                  this.msgSuccess(res.data.message)\r\n                  this.getCardList()\r\n                } else {\r\n                  this.msgError(res.data.message)\r\n                }\r\n              })\r\n            }\r\n          }\r\n        ]\r\n      },\r\n      // 卡包弹框开关\r\n      openCreateFolder: false,\r\n      // 卡片弹框开关\r\n      openCreateFile: false,\r\n      // 查看卡片弹框开关\r\n      openSelectFile: false,\r\n      // is login\r\n      isLogin: \"NOT\",\r\n      // list\r\n      list: [],\r\n      // card package form\r\n      packageForm: {\r\n        cardType: 1,\r\n        cardOfIs: 0,\r\n        name: \"\"\r\n      },\r\n      // card form\r\n      cardForm: {\r\n        cardType: 2,\r\n        cardOfIs: 0,\r\n        name: \"\",\r\n        content: \"\"\r\n      },\r\n      // card move form\r\n      cardMoveForm: {},\r\n      // select card form\r\n      selectCardForm: {},\r\n      // select package option\r\n      selectPackageOption: [],\r\n      // open Move card switch default close\r\n      openMoveFile: false,\r\n      // card list in card package\r\n      packageCardList: [],\r\n      // open card package switch\r\n      openFolder: false\r\n    }\r\n  },\r\n  created() {\r\n    this.getCardList()\r\n    this.getUserData()\r\n  },\r\n  methods: {\r\n    // package card list\r\n    getPackageCardList(id) {\r\n      let body = {\r\n        packageId: id\r\n      }\r\n      packageCardList(body).then(res => {\r\n        if (res.data.code === 200) {\r\n          this.packageCardList = res.data.data.packageCardList\r\n        }\r\n      })\r\n    },\r\n    // move card button\r\n    moveCardBtn() {\r\n      if (this.cardMoveForm.cardOfId === \"\") {\r\n        this.msgError(\"please select card package\")\r\n        this.refFocus(this.$refs.cardMove)\r\n      } else {\r\n        cardSave(this.cardMoveForm).then(res => {\r\n          if (res.data.code === 200) {\r\n            this.msgSuccess(\"move success\")\r\n            this.openMoveFile = false\r\n            this.cardMoveForm.cardOfId = \"\"\r\n            this.getCardList()\r\n          } else {\r\n            this.msgError(\"move error\")\r\n          }\r\n        })\r\n      }\r\n    },\r\n    // close move card dialog\r\n    closeMoveFile() {\r\n      this.cardMoveForm.id = \"\"\r\n      this.cardMoveForm.cardOfId = \"\"\r\n      this.openMoveFile = false\r\n    },\r\n    // create card\r\n    createCardBtn() {\r\n      if (this.cardForm.name === \"\") {\r\n        this.msgError(\"please input card name\")\r\n        this.refFocus(this.$refs.cardName)\r\n      } else {\r\n        if (this.cardForm.content === \"\") {\r\n          this.msgError(\"please input card content\")\r\n          this.refFocus(this.$refs.cardContent)\r\n        } else {\r\n          cardSave(this.cardForm).then(res => {\r\n            if (res.data.code === 200) {\r\n              this.msgSuccess(res.data.message)\r\n              this.openCreateFile = false\r\n              this.cardForm.name = \"\"\r\n              this.cardForm.content = \"\"\r\n              this.getCardList()\r\n              if (this.eventData.id) {\r\n                this.getPackageCardList(this.eventData.id)\r\n              }\r\n            } else {\r\n              this.msgError(res.data.message)\r\n            }\r\n          })\r\n        }\r\n      }\r\n    },\r\n    closeCreateFile() {\r\n      this.cardForm.id = \"\"\r\n      this.cardForm.name = \"\"\r\n      this.cardForm.content = \"\"\r\n      this.openCreateFile = false\r\n    },\r\n    // close card package\r\n    closeCreateFolder() {\r\n      this.packageForm.id = \"\"\r\n      this.packageForm.name = \"\"\r\n      this.openCreateFolder = false\r\n    },\r\n    // create card package\r\n    createCardPackageBtn() {\r\n      if (this.packageForm.name === \"\") {\r\n        this.msgError(\"please input card package name\")\r\n        this.refFocus(this.$refs.packageName)\r\n      } else {\r\n        cardSave(this.packageForm).then(res => {\r\n          if (res.data.code === 200) {\r\n            this.msgSuccess(res.data.message)\r\n            this.openCreateFolder = false\r\n            this.packageForm.name = \"\"\r\n            this.getCardList()\r\n          } else {\r\n            this.msgError(res.data.message)\r\n          }\r\n        })\r\n      }\r\n    },\r\n    // card list\r\n    getCardList() {\r\n      cardList().then(res => {\r\n        if (res.data.code === 200) {\r\n          this.list = res.data.data.list\r\n        }\r\n      })\r\n    },\r\n    // card package list\r\n    getCardPackageList() {\r\n      packageList().then(res => {\r\n        if (res.data.code === 200) {\r\n          this.selectPackageOption = res.data.data.packageList\r\n        }\r\n      })\r\n    },\r\n    // 文件右键\r\n    fileClickRight(row,event) {\r\n      this.isFileOpen = false\r\n      nextTick(() => {\r\n        this.fileEventVal = event\r\n        this.fileDataVal = row\r\n        this.isFileOpen = true\r\n      })\r\n      event.preventDefault()\r\n    },\r\n    // dialog 文件右键\r\n    fileDialogClickRight(row,event) {\r\n      this.isDialogFileOpen = false\r\n      nextTick(() => {\r\n        this.dialogFileEventVal = event\r\n        this.dialogFileDataVal = row\r\n        this.isDialogFileOpen = true\r\n      })\r\n      event.preventDefault()\r\n    },\r\n    // 文件卡包右键\r\n    clickRight(row,event) {\r\n      this.isOpen = false\r\n      nextTick(() => {\r\n        this.eventVal = event\r\n        this.eventData = row\r\n        this.isOpen = true\r\n      })\r\n      event.preventDefault()\r\n    },\r\n    // 创建卡包按钮\r\n    createFolderBtn() {\r\n      this.openCreateFolder = true\r\n    },\r\n    // 创建卡片按钮\r\n    createFileBtn() {\r\n      this.openCreateFile = true\r\n    },\r\n    // exit btn\r\n    btnExit() {\r\n      store.delToken()\r\n      this.msgSuccess(\"exiting...\")\r\n      setTimeout(() => {\r\n        this.routerPath(\"/login\")\r\n      },2000)\r\n    },\r\n    getUserData() {\r\n      getUserData().then(res => {\r\n        if (res.data.code === 200) {\r\n          this.isLogin = \"LOGIN\"\r\n        } else {\r\n          this.isLogin = \"NOT\"\r\n          this.msgError(\"Login expired, Processing...\")\r\n          setTimeout(() => {\r\n            this.routerPath(\"/login\")\r\n          },2000)\r\n        }\r\n      })\r\n    }\r\n  }\r\n}\r\n</script>\r\n\r\n<style scoped>\r\n.dialog-footer button:first-child {\r\n  margin-right: 10px;\r\n}\r\n</style>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ui/windows-card-manage-ui/src/views/index.vue b/ui/windows-card-manage-ui/src/views/index.vue
+--- a/ui/windows-card-manage-ui/src/views/index.vue	(revision adeaab16c964cbbd817e9d4165c8928b4cc33243)
++++ b/ui/windows-card-manage-ui/src/views/index.vue	(date 1676775766926)
+@@ -1,8 +1,8 @@
+ <template>
+-  <!-- 桌面首页 -->
+-  <!-- 最外层 -->
++  <!-- 桌面首页 -- desktop home -->
++  <!-- 最外层 -- box -->
+   <div style="text-align: center;" :style="{backgroundImage: 'url('+ bgImageUrl +')'}" class="v-h-100 v-flex v-flex-flow">
+-    <!-- 头部标签 -->
++    <!-- 头部标签 -- head tag -->
+     <div class="nav-header v-flex" style="height: 7vh">
+       <div class="v-flex-1 v-flex v-flex-aic p-l-40">
+         <div class="cursor-p">
+@@ -32,44 +32,56 @@
+     <div class="nav-bottom-content p-l-20 p-r-20" style="height: 93vh">
+       <div class="h-100">
+         <div v-for="(item,i) in list" :key="i">
+-          <!-- 文件夹 -->
+-          <div v-if="item.cardType === 1" class="float-left m-r-10 cursor-d windows-icon" @contextmenu.prevent="clickRight(item,$event)">
+-            <!-- 文件夹图标 -->
++          <!-- 文件夹 -- card decks -->
++          <div v-if="item.cardType === 1" class="float-left m-r-10 cursor-d windows-icon" :class="{
++                'folder-color': item.colorStyle===0,
++                'text-red': item.colorStyle===1,
++                'text-orange': item.colorStyle===2,
++                'super-member-color': item.colorStyle===3,
++                'text-green': item.colorStyle===4,
++                'text-blue': item.colorStyle===5}" @contextmenu.prevent="clickRight(item,$event)">
++            <!-- 文件夹图标 -- file icon -->
+             <div>
+-              <i class="iconfont icon-kapian1 folder-color font-size-40-plus"></i>
++              <i class="iconfont icon-kapian1 font-size-40-plus"></i>
+             </div>
+-            <!-- 文件夹名称 -->
++            <!-- 文件夹名称 -- file name -->
+             <div class="font-size-12">
+-              <span class="color-white">{{item.name}}</span>
++              <span>{{item.name}}</span>
+             </div>
+           </div>
+-          <!-- 普通文件 -->
+-          <div v-if="item.cardType === 2" class="float-left m-l-10 cursor-d windows-icon" @contextmenu="fileClickRight(item,$event)">
+-            <!-- 文件夹图标 -->
++          <!-- 普通文件 -- general card -->
++          <div v-if="item.cardType === 2" class="float-left m-l-10 cursor-d windows-icon" :class="{
++                'text-white': item.colorStyle===0,
++                'text-red': item.colorStyle===1,
++                'text-orange': item.colorStyle===2,
++                'super-member-color': item.colorStyle===3,
++                'text-green': item.colorStyle===4,
++                'text-blue': item.colorStyle===5}" @contextmenu="fileClickRight(item,$event)">
++            <!-- card icon -->
+             <div>
+-              <i class="iconfont icon-kapian color-white font-size-40-plus"></i>
++              <i class="iconfont icon-kapian font-size-40-plus"></i>
+             </div>
+-            <!-- 文件夹名称 -->
++            <!-- card name -->
+             <div class="font-size-12">
+-              <span class="color-white">{{item.name}}</span>
++              <span>{{item.name}}</span>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+-    <!-- 文件夹上右键的弹框内容 -->
++    <!-- 文件夹上右键的弹框内容-- card decks right click pop-up box content -->
+     <vue3-menus :open="isOpen" :event="eventVal" :menus="menus.menus">
+       <template #label="{ menu }">{{ menu.label }}</template>
+     </vue3-menus>
+-    <!-- 文件上右键的弹框内容 -->
++    <!-- 文件上右键的弹框内容 -- card right click pop-up box content -->
+     <vue3-menus :open="isFileOpen" :event="fileEventVal" :menus="fileMenus.menus">
+       <template #label="{ menu }">{{ menu.label }}</template>
+     </vue3-menus>
+-    <!-- 在 card pakage dialog 中文件上右键的弹框内容 -->
++    <!-- 在 card pakage dialog 中文件上右键的弹框内容 -- it is card in desks dialog right click pop-up box content -->
+     <vue3-menus :open="isDialogFileOpen" :event="dialogFileEventVal" :menus="dialogFileMenus.menus" :z-index="9999">
+       <template #label="{ menu }">{{ menu.label }}</template>
+     </vue3-menus>
+-    <!-- 创建卡包弹框 -->
++    <!-- 创建卡包弹框 -- create desks dialog -->
+     <el-dialog v-model="openCreateFolder" width="30%" title="create card DESKS" :before-close="closeCreateFolder">
+       <el-form>
+         <el-form-item label="DESKS name：">
+@@ -83,25 +95,31 @@
+         </span>
+       </template>
+     </el-dialog>
+-    <!-- 打开卡包弹框 -->
++    <!-- 打开卡包弹框 -- open card dialog -->
+     <el-dialog v-model="openFolder" width="60%" title="open card package">
+       <div style="min-height: 100px;">
+         <div v-for="(item,i) in packageCardList" :key="i">
+-          <!-- 普通文件 -->
+-          <div v-if="item.cardType === 2" class="float-left m-l-10 cursor-d windows-icon-dialog" @contextmenu="fileDialogClickRight(item,$event)">
+-            <!-- 文件夹图标 -->
++          <!-- 普通文件 --general card -->
++          <div v-if="item.cardType === 2" class="float-left m-l-10 cursor-d windows-icon-dialog" :class="{
++                'text-gray-light': item.colorStyle===0,
++                'text-red': item.colorStyle===1,
++                'text-orange': item.colorStyle===2,
++                'super-member-color': item.colorStyle===3,
++                'text-green': item.colorStyle===4,
++                'text-blue': item.colorStyle===5}" @contextmenu="fileDialogClickRight(item,$event)">
++            <!-- 文件夹图标 -- card icon -->
+             <div>
+-              <i class="iconfont icon-24gl-fileText color-white font-size-35-plus"></i>
++              <i class="iconfont icon-kapian font-size-35-plus"></i>
+             </div>
+-            <!-- 文件夹名称 -->
++            <!-- 文件夹名称 -- card name -->
+             <div class="font-size-12">
+-              <span class="color-white">{{item.name}}</span>
++              <span>{{item.name}}</span>
+             </div>
+           </div>
+         </div>
+       </div>
+     </el-dialog>
+-    <!-- 创建卡片弹框 -->
++    <!-- 创建卡片弹框 -- create card dialog -->
+     <el-dialog v-model="openCreateFile" width="30%" title="create card" :before-close="closeCreateFile">
+       <el-form>
+         <el-form-item label="card name：">
+@@ -118,7 +136,7 @@
+         </span>
+       </template>
+     </el-dialog>
+-    <!-- 重看卡片弹框 -->
++    <!-- 重看卡片弹框 -- read card dialog -->
+     <el-dialog v-model="openSelectFile" width="30%" title="see card">
+       <el-form>
+         <el-form-item label="card name：">
+@@ -138,7 +156,7 @@
+         </span>
+       </template>
+     </el-dialog>
+-    <!-- 移动卡片弹框 -->
++    <!-- 移动卡片弹框 -- move card dialog -->
+     <el-dialog v-model="openMoveFile" width="30%" title="move card" :before-close="closeMoveFile">
+       <el-form>
+         <el-form-item label="card package">
+@@ -151,6 +169,27 @@
+         <span class="dialog-footer">
+           <el-button @click="closeMoveFile">cancel</el-button>
+           <el-button type="primary" @click="moveCardBtn">yes</el-button>
++        </span>
++      </template>
++    </el-dialog>
++    <!-- 卡包颜色更改弹框 -- card or desks color style dialog -->
++    <el-dialog v-model="openPackageColor" width="30%" title="customize card color" :before-close="closeOpenPackageColor">
++      <el-form>
++        <el-form-item label="color style">
++          <el-select v-model="packageColorForm.colorStyle" ref="colorStyle" placeholder="please select card color style">
++            <el-option label="default" :value="0"/>
++            <el-option label="red" :value="1"/>
++            <el-option label="orange" :value="2"/>
++            <el-option label="yellow" :value="3"/>
++            <el-option label="green" :value="4"/>
++            <el-option label="blue" :value="5"/>
++          </el-select>
++        </el-form-item>
++      </el-form>
++      <template #footer>
++        <span class="dialog-footer">
++          <el-button @click="closeOpenPackageColor">cancel</el-button>
++          <el-button type="primary" @click="cardColorStyleBtn">yes</el-button>
+         </span>
+       </template>
+     </el-dialog>
+@@ -187,8 +226,9 @@
+   },
+   data() {
+     return {
++      // default background image
+       bgImageUrl: bgTwo,
+-      // 文件开关
++      // 文件开关 -- card open dialog switch:1.false: close,2.true: open
+       isFileOpen: false,
+       // file event
+       fileEventVal: {},
+@@ -247,6 +287,21 @@
+             }
+           },
+           {
++            label: "color",
++            click: () => {
++              // get card data
++              let body = {
++                id: this.fileDataVal.id
++              }
++              getCard(body).then(res => {
++                if (res.data.code === 200) {
++                  this.packageColorForm = res.data.data.card
++                  this.openPackageColor = true
++                }
++              })
++            }
++          },
++          {
+             label: "move",
+             click: () => {
+               // get card data
+@@ -266,7 +321,7 @@
+           },
+         ]
+       },
+-      // 文件 dialog 开关
++      // 文件 dialog 开关 -- card in decks open dialog switch:1.false: close,2.true: open
+       isDialogFileOpen: false,
+       // file event
+       dialogFileEventVal: {},
+@@ -323,22 +378,37 @@
+                 }
+               })
+             }
++          },
++          {
++            label: "color",
++            click: () => {
++              // get card data
++              let body = {
++                id: this.dialogFileDataVal.id
++              }
++              getCard(body).then(res => {
++                if (res.data.code === 200) {
++                  this.packageColorForm = res.data.data.card
++                  this.openPackageColor = true
++                }
++              })
++            }
+           }
+         ]
+       },
+-      // 文件夹相关
++      // 文件夹相关 -- decks open dialog switch:1.false: close,2.true: open
+       isOpen: false,
+-      // package event
++      // decks event
+       eventVal: {},
+-      // package event data
++      // decks event data
+       eventData: {},
+-      // package menus
++      // decks menus
+       menus: {
+         menus: [
+           {
+             label: "rename",
+             click: () => {
+-              // get card package data
++              // get card decks data
+               let body = {
+                 id: this.eventData.id
+               }
+@@ -358,6 +428,21 @@
+             }
+           },
+           {
++            label: "color",
++            click: () => {
++              // get card decks data
++              let body = {
++                id: this.eventData.id
++              }
++              getCard(body).then(res => {
++                if (res.data.code === 200) {
++                  this.packageColorForm = res.data.data.card
++                  this.openPackageColor = true
++                }
++              })
++            }
++          },
++          {
+             label: "delete",
+             style: {
+               color: "red"
+@@ -378,26 +463,28 @@
+           }
+         ]
+       },
+-      // 卡包弹框开关
++      // 卡包弹框开关 -- create decks open dialog switch:1.false: close,2.true: open
+       openCreateFolder: false,
+-      // 卡片弹框开关
++      // 卡片弹框开关 -- create card open dialog switch:1.false: close,2.true: open
+       openCreateFile: false,
+-      // 查看卡片弹框开关
++      // 查看卡片弹框开关 -- read card  open dialog switch:1.false: close,2.true: open
+       openSelectFile: false,
+       // is login
+       isLogin: "NOT",
+       // list
+       list: [],
+-      // card package form
++      // card decks form
+       packageForm: {
+         cardType: 1,
+         cardOfIs: 0,
++        colorStyle: 0,
+         name: ""
+       },
+       // card form
+       cardForm: {
+         cardType: 2,
+         cardOfIs: 0,
++        colorStyle: 0,
+         name: "",
+         content: ""
+       },
+@@ -405,14 +492,20 @@
+       cardMoveForm: {},
+       // select card form
+       selectCardForm: {},
+-      // select package option
++      // select decks option
+       selectPackageOption: [],
+       // open Move card switch default close
+       openMoveFile: false,
+-      // card list in card package
++      // card list in card decks
+       packageCardList: [],
+-      // open card package switch
+-      openFolder: false
++      // open card decks switch
++      openFolder: false,
++      // card decks color style dialog switch default false not open
++      openPackageColor: false,
++      // decks color style form
++      packageColorForm: {
++        colorStyle: ""
++      }
+     }
+   },
+   created() {
+@@ -420,7 +513,13 @@
+     this.getUserData()
+   },
+   methods: {
+-    // package card list
++    // close decks card color style dialog
++    closeOpenPackageColor() {
++      this.openPackageColor = false
++      this.packageColorForm = {}
++      this.packageColorForm.colorStyle = ""
++    },
++    // decks card list
+     getPackageCardList(id) {
+       let body = {
+         packageId: id
+@@ -431,10 +530,32 @@
+         }
+       })
+     },
++    // color style yes button
++    cardColorStyleBtn() {
++      if (this.packageColorForm.colorStyle === "") {
++        this.msgError("please select color style")
++        this.refFocus(this.$refs.colorStyle)
++      } else {
++        cardSave(this.packageColorForm).then(res => {
++          if (res.data.code === 200) {
++            this.msgSuccess("style customize successfully")
++            this.openPackageColor = false
++            this.packageColorForm = {}
++            this.packageColorForm.colorStyle = ""
++            this.getCardList()
++            if (this.eventData.id) {
++              this.getPackageCardList(this.eventData.id)
++            }
++          } else {
++            this.msgError("setting error")
++          }
++        })
++      }
++    },
+     // move card button
+     moveCardBtn() {
+       if (this.cardMoveForm.cardOfId === "") {
+-        this.msgError("please select card package")
++        this.msgError("please select card decks")
+         this.refFocus(this.$refs.cardMove)
+       } else {
+         cardSave(this.cardMoveForm).then(res => {
+@@ -488,16 +609,16 @@
+       this.cardForm.content = ""
+       this.openCreateFile = false
+     },
+-    // close card package
++    // close card decks
+     closeCreateFolder() {
+       this.packageForm.id = ""
+       this.packageForm.name = ""
+       this.openCreateFolder = false
+     },
+-    // create card package
++    // create card decks
+     createCardPackageBtn() {
+       if (this.packageForm.name === "") {
+-        this.msgError("please input card package name")
++        this.msgError("please input card decks name")
+         this.refFocus(this.$refs.packageName)
+       } else {
+         cardSave(this.packageForm).then(res => {
+@@ -520,7 +641,7 @@
+         }
+       })
+     },
+-    // card package list
++    // card decks list
+     getCardPackageList() {
+       packageList().then(res => {
+         if (res.data.code === 200) {
+@@ -528,7 +649,7 @@
+         }
+       })
+     },
+-    // 文件右键
++    // 文件右键 -- card right click's content
+     fileClickRight(row,event) {
+       this.isFileOpen = false
+       nextTick(() => {
+@@ -538,7 +659,7 @@
+       })
+       event.preventDefault()
+     },
+-    // dialog 文件右键
++    // dialog 文件右键 -- card in decks right click's content
+     fileDialogClickRight(row,event) {
+       this.isDialogFileOpen = false
+       nextTick(() => {
+@@ -548,7 +669,7 @@
+       })
+       event.preventDefault()
+     },
+-    // 文件卡包右键
++    // 文件卡包右键 -- decks right click's content
+     clickRight(row,event) {
+       this.isOpen = false
+       nextTick(() => {
+@@ -558,11 +679,11 @@
+       })
+       event.preventDefault()
+     },
+-    // 创建卡包按钮
++    // 创建卡包按钮 -- create decks button
+     createFolderBtn() {
+       this.openCreateFolder = true
+     },
+-    // 创建卡片按钮
++    // 创建卡片按钮 -- create card button
+     createFileBtn() {
+       this.openCreateFile = true
+     },
+@@ -574,6 +695,7 @@
+         this.routerPath("/login")
+       },2000)
+     },
++    // get user data function
+     getUserData() {
+       getUserData().then(res => {
+         if (res.data.code === 200) {
+Index: sql/windows_card_manage.sql
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/*\r\n Navicat Premium Data Transfer\r\n\r\n Source Server         : 本地MySQL\r\n Source Server Type    : MySQL\r\n Source Server Version : 50737\r\n Source Host           : localhost:3306\r\n Source Schema         : windows_card_manage\r\n\r\n Target Server Type    : MySQL\r\n Target Server Version : 50737\r\n File Encoding         : 65001\r\n\r\n Date: 18/02/2023 12:38:19\r\n*/\r\n\r\nSET NAMES utf8mb4;\r\nSET FOREIGN_KEY_CHECKS = 0;\r\n\r\n-- ----------------------------\r\n-- Table structure for card\r\n-- ----------------------------\r\nDROP TABLE IF EXISTS `card`;\r\nCREATE TABLE `card`  (\r\n  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'card id',\r\n  `user_id` int(11) NULL DEFAULT NULL COMMENT 'card create user',\r\n  `card_type` int(11) NULL DEFAULT NULL COMMENT 'card type：1.card package，2.card',\r\n  `name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'card name',\r\n  `card_of_is` int(11) NULL DEFAULT NULL COMMENT 'card ascription switch：0.no ascription，1.ascription：desktop no show',\r\n  `card_of_id` int(11) NULL DEFAULT NULL COMMENT 'when it is a card：ascription card package id',\r\n  `content` varchar(2000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'when it is a card：card content',\r\n  `create_time` datetime NULL DEFAULT NULL COMMENT 'create time',\r\n  `update_time` datetime NULL DEFAULT NULL COMMENT 'update time',\r\n  PRIMARY KEY (`id`) USING BTREE\r\n) ENGINE = InnoDB AUTO_INCREMENT = 20 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;\r\n\r\n-- ----------------------------\r\n-- Table structure for user\r\n-- ----------------------------\r\nDROP TABLE IF EXISTS `user`;\r\nCREATE TABLE `user`  (\r\n  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'user id',\r\n  `account` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'user account',\r\n  `password` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'user password',\r\n  `salt` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'salt：for password encryption',\r\n  `create_time` datetime NULL DEFAULT NULL COMMENT 'create time',\r\n  PRIMARY KEY (`id`) USING BTREE\r\n) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '登录用户数据表' ROW_FORMAT = DYNAMIC;\r\n\r\nSET FOREIGN_KEY_CHECKS = 1;\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/sql/windows_card_manage.sql b/sql/windows_card_manage.sql
+--- a/sql/windows_card_manage.sql	(revision adeaab16c964cbbd817e9d4165c8928b4cc33243)
++++ b/sql/windows_card_manage.sql	(date 1676769112987)
+@@ -1,7 +1,7 @@
+ /*
+  Navicat Premium Data Transfer
+ 
+- Source Server         : 本地MySQL
++ Source Server         : local MySQL
+  Source Server Type    : MySQL
+  Source Server Version : 50737
+  Source Host           : localhost:3306
+Index: src/main/java/com/example/windowscardmanage/config/CorsConfig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.windowscardmanage.config;\r\n\r\nimport org.springframework.context.annotation.Bean;\r\nimport org.springframework.context.annotation.Configuration;\r\nimport org.springframework.web.cors.CorsConfiguration;\r\nimport org.springframework.web.cors.UrlBasedCorsConfigurationSource;\r\nimport org.springframework.web.filter.CorsFilter;\r\n\r\n/**\r\n * 配置全局跨域\r\n */\r\n@Configuration\r\npublic class CorsConfig{\r\n    private CorsConfiguration buildConfig() {\r\n        CorsConfiguration corsConfiguration = new CorsConfiguration();\r\n        corsConfiguration.addAllowedOrigin(\"*\"); // 允许任何域名使用\r\n        corsConfiguration.addAllowedHeader(\"*\"); // 允许任何头\r\n        corsConfiguration.addAllowedMethod(\"*\"); // 允许任何方法 （post、 get 等）\r\n        return corsConfiguration;\r\n    }\r\n\r\n    @Bean\r\n    public CorsFilter corsFilter () {\r\n        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();\r\n        source.registerCorsConfiguration(\"/**\",buildConfig());\r\n        return new CorsFilter(source);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/windowscardmanage/config/CorsConfig.java b/src/main/java/com/example/windowscardmanage/config/CorsConfig.java
+--- a/src/main/java/com/example/windowscardmanage/config/CorsConfig.java	(revision adeaab16c964cbbd817e9d4165c8928b4cc33243)
++++ b/src/main/java/com/example/windowscardmanage/config/CorsConfig.java	(date 1676769112994)
+@@ -7,13 +7,13 @@
+ import org.springframework.web.filter.CorsFilter;
+ 
+ /**
+- * 配置全局跨域
++ * 配置全局跨域(Configure global cross-domain)
+  */
+ @Configuration
+ public class CorsConfig{
+     private CorsConfiguration buildConfig() {
+         CorsConfiguration corsConfiguration = new CorsConfiguration();
+-        corsConfiguration.addAllowedOrigin("*"); // 允许任何域名使用
++        corsConfiguration.addAllowedOrigin("*"); // Allow any domain name to use(允许任何域名使用)
+         corsConfiguration.addAllowedHeader("*"); // 允许任何头
+         corsConfiguration.addAllowedMethod("*"); // 允许任何方法 （post、 get 等）
+         return corsConfiguration;
+Index: ui/windows-card-manage-ui/src/assets/public.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.nav-header {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    background: rgba(0, 0, 0, 0.5);\r\n    color: #fff;\r\n}\r\n\r\n.nav-bottom-content {\r\n    position: relative;\r\n    top: 50px;\r\n}\r\n\r\n.folder-color {\r\n    color: #4b9af3;\r\n}\r\n\r\n/* 桌面图标 */\r\n.windows-icon {\r\n    width: 70px;\r\n    padding: 8px;\r\n    border-radius: 10px;\r\n}\r\n\r\n.windows-icon:hover {\r\n    border-radius: 10px;\r\n    background: rgba(0, 0, 0, 0.4);\r\n}\r\n\r\n.windows-icon-dialog {\r\n    width: 70px;\r\n    padding: 8px;\r\n    border-radius: 10px;\r\n    background: rgba(0, 0, 0, 0.24);\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ui/windows-card-manage-ui/src/assets/public.css b/ui/windows-card-manage-ui/src/assets/public.css
+--- a/ui/windows-card-manage-ui/src/assets/public.css	(revision adeaab16c964cbbd817e9d4165c8928b4cc33243)
++++ b/ui/windows-card-manage-ui/src/assets/public.css	(date 1676774406586)
+@@ -32,5 +32,4 @@
+     width: 70px;
+     padding: 8px;
+     border-radius: 10px;
+-    background: rgba(0, 0, 0, 0.24);
+ }
+\ No newline at end of file
